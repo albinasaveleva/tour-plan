@@ -64,6 +64,10 @@ a {
   vertical-align: top;
 }
 
+.search__input:focus {
+  outline: none;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -72,6 +76,19 @@ a {
   border: none;
   width: 65px;
   height: 40px;
+}
+
+.search__button:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.search__button:active {
+  outline: none;
+}
+
+.search__button:focus {
+  outline: none;
 }
 
 .user {
