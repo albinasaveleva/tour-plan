@@ -5,4 +5,101 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  color: #333333;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.header__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search__input {
+  background-color: #F5FAFE;
+  width: 350px;
+  height: 40px;
+  padding-left: 23px;
+  padding-right: 75px;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #EC1F46;
+  border: none;
+  width: 65px;
+  height: 40px;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin: 0 18px;
+}
+
+.user__name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+/*# sourceMappingURL=style.css.map */
