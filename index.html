@@ -21,7 +21,7 @@
             <form action="#" class="search navbar__search">
                 <input type="text" class="search__input" placeholder="Search Location">
                 <button class="search__button">
-                    <img src="assets/icons/search-icon.svg" alt="Search">
+                    <img src="assets/icons/search-icon.svg" class="star" alt="Search">
                 </button>
             </form>
             <a class="user">
@@ -61,21 +61,29 @@
 <div class="hotel">
     <div class="container">
         <div class="hotel-name">
-            <div class="hotel-name__block">
-                <div class="stars"></div>
-                <h2 class="hotel-name__title">
-                    GRAND HILTON HOTEL
-                </h2>
-                <span class="offer">
-                    Flash Offer
-                </span>
+            <div class="hotel-name__wrapper">
+                <div class="hotel-name__block">
+                    <div class="stars">
+                       <img src="assets/icons/Star.svg" class="star" alt="Star">
+                       <img src="assets/icons/Star.svg" class="star" alt="Star">
+                       <img src="assets/icons/Star.svg" class="star" alt="Star">
+                       <img src="assets/icons/Star.svg" class="star" alt="Star">
+                       <img src="assets/icons/Star.svg" class="star" alt="Star">
+                    </div>
+                    <h2 class="hotel-name__title">
+                        GRAND HILTON HOTEL
+                    </h2>
+                    <span class="offer">
+                        Flash Offer
+                    </span>
+                </div>
                 <p class="hotel-name__description">
                     Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
                 </p>
             </div>
             <div class="ratting">
-                <span>User Rattings</span>
-                <span>4.5/5</span>
+                <span class="ratting__text">User Rattings</span>
+                <span class="ratting__count">4.5/<span class="ratting__count_small">5</span></span>
             </div>
         </div>
     </div>
