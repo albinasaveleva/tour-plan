@@ -13,4 +13,8 @@ var mySwiper = new Swiper('.swiper-container', {
       el: '.swiper-scrollbar',
       hide: true,
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
   })
