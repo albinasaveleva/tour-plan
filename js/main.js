@@ -11,5 +11,6 @@ var mySwiper = new Swiper('.swiper-container', {
     // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
+      hide: true,
     },
   })
