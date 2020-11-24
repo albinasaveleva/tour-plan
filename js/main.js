@@ -19,8 +19,6 @@ var mySwiper = new Swiper('.swiper-container', {
     },
   })
 ymaps.ready(init);
-var myMap,
-    bigMap = false;
 
 function init(){
       var myMap = new ymaps.Map("map", {
@@ -42,15 +40,4 @@ function init(){
         .add(new ymaps.Placemark([41.01003, 28.97968], {
           iconColor: '#0095b6'
         }));
-$('#toggler').click(toggle);
-}
-
-function toggle () {
-    bigMap = !bigMap;
-
-    if (bigMap) {
-        $('#map').removeClass('smallMap');
-    } else {
-        $('#map').addClass('smallMap');
-    }
 }
