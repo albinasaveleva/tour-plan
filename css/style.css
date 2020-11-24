@@ -574,6 +574,25 @@ a {
   .container {
     max-width: 960px;
   }
+  .hotel-information {
+    padding-bottom: 60px;
+  }
+  .slider {
+    margin: 0 auto 30px;
+    width: 700px;
+  }
+  .hotel-description {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .booking {
+    width: 340px;
+    padding: 26px 22px;
+    margin-right: 20px;
+  }
+  .map {
+    width: 340px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -654,6 +673,13 @@ a {
     margin-left: auto;
     margin-bottom: 14px;
   }
+  .slider {
+    width: 530px;
+    height: 350px;
+  }
+  .booking {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -663,11 +689,43 @@ a {
   .logo__image {
     width: 99px;
   }
+  .slider {
+    width: 440px;
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .container {
     max-width: 280px;
+  }
+  .hotel-information {
+    padding: 20px 0 40px;
+  }
+  .slider {
+    width: 280px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .booking {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+  .price-block {
+    max-width: 110px;
+  }
+  .person-room {
+    max-width: 110px;
+  }
+  .call-center__text {
+    max-width: 120px;
+  }
+  .call-center__link {
+    max-width: 110px;
+  }
+  .map {
+    max-width: 280px;
+    height: 170px;
   }
 }
 /*# sourceMappingURL=style.css.map */
