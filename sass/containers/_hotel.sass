@@ -58,6 +58,8 @@
             font-size: 12px
 .hotel-information
     padding-bottom: 70px
+    display: flex
+    flex-wrap: wrap
 .slider 
     width: 728px
     height: 450px
@@ -101,4 +103,93 @@
     img
         width: inherit
         height: inherit 
+.booking
+    max-width: 350px
+    width: 100%
+    padding: 26px
+    background-color: $main-dark
+    border-radius: 8px
+    &__information
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-bottom: 9px
+.price-block
+    max-width: 140px
+    display: flex
+    flex-direction: column
+    font-family: Nunito
+    color: $main-light
+    text-align: left
+    &__text
+        font-weight: 400
+        font-size: 10px
+        line-height: 14px
+    &__price
+        font-weight: 800
+        font-size: 24px
+        line-height: 33px
+    &__per-room
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+.person-room
+        max-width: 140px
+        min-width: 80px
+        font-family: Nunito
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+        color: $main-light
+        text-align: right
+        &__guests
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            margin-bottom: 8px
+            img
+                margin-right: 8px
+        &__rooms
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            img
+                margin-right: 8px
+.call-center  
+    margin-bottom: 17px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    font-family: Nunito
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: $main-light  
+    &__text
+        max-width: 140px
+        text-align: left
+    &__link
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        vertical-align: center
+        text-align: right
+        max-width: 140px
+        min-width: 80px
+        img
+            margin-right: 8px
+            padding-top: 6px
 
+.booking__button
+    display: flex
+    flex-basis: 100%
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding: 13px
+    font-family: Nunito
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $main-light
+    border-radius: 4px
