@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=031eae98-94fd-4589-91c8-d1a5e4933405&lang=en_RU" type="text/javascript">
+    </script>
     <title>Best Tour Plan - Hotel Booking</title>
 </head>
 
@@ -17,7 +19,7 @@
      <div class="navbar-top">
         <div class="container navbar-top__container">
             <a href="#" class="logo">
-                <img src="assets/img/horizontal-logo.svg" class="star" class="logo__image" alt="Logo: Best Tour Plan">
+                <img src="assets/img/horizontal-logo.svg" class="logo__image" alt="Logo: Best Tour Plan">
             </a>
             <form action="#" class="search navbar__search">
                 <input type="text" class="search__input" placeholder="Search Location">
@@ -142,9 +144,7 @@
                     </div>
                     <a class="button booking__button">View Other Options</a>
                 </div>
-                <div class="map">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A893bc746a6254f1ee4b18b92bef9d0a07fdc2c764c3ed6c6d7907a75cd1176d1&amp;source=constructor" width="350" height="213" frameborder="0"></iframe>
-                </div>
+                <div class="map" id="map" style="max-width: 350px; height: 213px"></div>
             </div>
         </div>
     </div>
