@@ -87,8 +87,6 @@
     height: inherit
 .swiper-slide
     position: relative
-    width: inherit
-    height: inherit
     border-radius: 8px
     overflow: hidden
     &::after
@@ -100,15 +98,15 @@
         right: 0
         background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
         border-radius: 8px 
-    img
-        width: inherit
-        height: inherit 
+    &__image
+        width: 100%
+        height: 100% 
+        object-fit: cover
 .hotel-description
-    max-width: 350px  
+    width: 350px
     display: flex
     flex-wrap: wrap
 .booking
-    max-width: 350px
     width: 100%
     margin-bottom: 27px
     padding: 26px
@@ -139,27 +137,25 @@
         font-size: 12px
         line-height: 16px
 .person-room
-        max-width: 140px
-        min-width: 80px
-        font-family: Nunito
-        font-weight: 400
-        font-size: 12px
-        line-height: 16px
-        color: $main-light
-        text-align: right
-        &__guests
-            display: flex
-            justify-content: space-between
-            align-items: flex-start
-            margin-bottom: 8px
-            img
-                margin-right: 8px
-        &__rooms
-            display: flex
-            justify-content: space-between
-            align-items: flex-start
-            img
-                margin-right: 8px
+    max-width: 140px
+    min-width: 80px
+    font-family: Nunito
+    font-weight: 400
+    font-size: 12px
+    line-height: 16px
+    color: $main-light
+    text-align: right
+    &__guests
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 8px
+    &__rooms
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__image
+            margin-right: 8px
 .call-center  
     margin-bottom: 17px
     display: flex
@@ -181,10 +177,9 @@
         text-align: right
         max-width: 140px
         min-width: 80px
-        img
-            margin-right: 8px
-            padding-top: 6px
-
+    &__image
+        margin-right: 8px
+        padding-top: 6px
 .booking__button
     display: flex
     flex-basis: 100%
@@ -199,10 +194,8 @@
     color: $main-light
     border-radius: 4px
 .map-wrapper
-    max-width: 350px
     width: 100%
     height: 213px
     background-color: $main-light
     border-radius: 10px
     overflow: hidden
-  
