@@ -14,3 +14,25 @@ a
 .button
     background-color: $action
     border: none  
+    &:hover
+        cursor: pointer
+        outline: none
+        &:active
+            outline: none
+        &:focus
+            outline: none
+.form
+    display: flex
+    position: relative
+    border-radius: 6px
+    overflow: hidden
+    &__input
+        width: 350px
+        border: none
+        text-align: left
+        &:focus 
+            outline: none
+    &__button
+        position: absolute
+        top: 0
+        right: 0
