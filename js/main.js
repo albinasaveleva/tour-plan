@@ -1,17 +1,9 @@
-var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.slider__button_next',
-      prevEl: '.slider__button_prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      hide: true,
+var mySwiper = new Swiper('.hotel__swiper-container', {
+
+  loop: true,
+      navigation: {
+      nextEl: '.hotel__swiper-button-next',
+      prevEl: '.hotel__swiper-button-prev',
     },
     keyboard: {
       enabled: true,
