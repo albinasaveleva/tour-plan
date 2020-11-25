@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,9 +24,9 @@
             <a href="#" class="logo">
                 <img src="assets/img/horizontal-logo.svg" class="logo__image" alt="Logo: Best Tour Plan">
             </a>
-            <form action="#" class="search navbar__search">
-                <input type="text" class="search__input" placeholder="Search Location">
-                <button class="button search__button">
+            <form action="#" class="form navbar__form">
+                <input type="text" class="navbar__input form__input" placeholder="Search Location">
+                <button class="button form__button navbar__button">
                     <img src="assets/icons/search-icon.svg" class="star" alt="Search">
                 </button>
             </form>
@@ -151,6 +154,19 @@
         </div>
     </div>
 </div>
+<div class="newsletter">
+    <div class="container newsletter__container">
+        <h2 class="newsletter__title">
+            <span class="newsletter__subtitle">subscribe to our</span>
+            Newsletter
+        </h2>
+        <form action="#" class="form newsletter__form">
+            <input type="text" class="newsletter__input form__input" placeholder="Your email address">
+            <button class="button newsletter__button form__button">Send</button>
+        </form>
+    </div>
+</div>
+
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
