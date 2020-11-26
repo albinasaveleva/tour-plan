@@ -793,6 +793,92 @@ a {
   margin-right: 2px;
 }
 
+.activities__container {
+  padding: 60px 0 98px;
+}
+
+.activities__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 57px;
+}
+
+.activities__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activity {
+  width: 255px;
+  height: 255px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.activity::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.activity:not(:last-child) {
+  margin-right: 30px;
+}
+
+.activity__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.activity__name {
+  z-index: 10;
+  max-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-left: 26px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.activity__button {
+  z-index: 10;
+  margin-bottom: 24px;
+  margin-left: 26px;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 20px;
+  background: #EC1F46;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
