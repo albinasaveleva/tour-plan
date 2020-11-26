@@ -46,7 +46,3 @@ function init(){
           iconColor: '#0095b6'
         }));
 }
-$ ('.newsletter').parallax({
-  imageSrc: '../assets/img/newsletter-bg.jpg',
-  position: 'center, center'
-});
