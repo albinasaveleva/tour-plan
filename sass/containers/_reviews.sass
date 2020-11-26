@@ -1,0 +1,100 @@
+.review
+    &__container
+        padding: 40px 0 70px
+    &__title
+        margin: 0 auto 70px
+        font-weight: 700
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+    &__swiper-container
+        margin: 0 auto
+        position: relative
+    &__card
+        position: relative
+        max-width: 730px
+        width: 100%
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-color: $main-light
+        margin-top: 45px
+        padding-bottom: 30px 
+    &__text
+        max-width: 537px
+        margin: 0
+        font-weight: 400
+        font-size: 12px
+        line-height: 160%
+        text-align: justify
+        color: $gray-1
+        &::before
+            content: ""
+            position: absolute
+            width: 70px
+            height: 47px
+            top: 13px
+            left: 64px
+            background-image: url(../assets/icons/comma-left.svg)
+        &::after
+            content: ""
+            position: absolute
+            width: 70px
+            height: 47px
+            bottom: 114px
+            right: 64px
+            background-image: url(../assets/icons/comma-right.svg)  
+    &__swiper-button
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 30px
+        height: 30px
+        z-index: 99
+        background-size: 10px
+        background-repeat: no-repeat
+        background-position: center
+        cursor: pointer
+    &__swiper-button-prev
+        background-image: url(../assets/icons/button-prev--dark.svg)
+        left: 16px
+    &__swiper-button-next
+        background-image: url(../assets/icons/button-next--dark.svg)
+        right: 16px
+
+.profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: -45px auto 32px
+    &__avatar
+        border-radius: 50%
+        width: 90px
+        height: 90px
+        object-fit: cover
+        margin-bottom: 9px
+    &__name
+        font-weight: 700
+        font-size: 12px
+        line-height: 15px
+        color: $action
+        margin: 0
+        margin-bottom: 10px
+    &__date
+        font-weight: 400
+        font-size: 10px
+        line-height: 13px
+        color: $black
+        margin-bottom: 4px
+    &__ratting
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 8px
+        max-width: 48px
+        img
+            padding: 1px
+        img:not(:last-child)
+            margin-right: 2px 

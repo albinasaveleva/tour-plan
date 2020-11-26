@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.hotel__swiper-container', {
+var hotelSlider = new Swiper('.hotel__swiper-container', {
 
   loop: true,
       navigation: {
@@ -10,6 +10,19 @@ var mySwiper = new Swiper('.hotel__swiper-container', {
       onlyInViewport: false,
     },
   })
+var reviewSlider = new Swiper('.review__swiper-container', {
+
+  loop: true,
+    navigation: {
+    nextEl: '.review__swiper-button-next',
+    prevEl: '.review__swiper-button-prev',
+  },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+  },
+})
+  
 ymaps.ready(init);
 
 function init(){
