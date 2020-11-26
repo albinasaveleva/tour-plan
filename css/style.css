@@ -678,10 +678,11 @@ a {
   background-color: #ffffff;
   margin-top: 45px;
   padding-bottom: 30px;
+  border-radius: 8px;
 }
 
 .review__text {
-  max-width: 537px;
+  padding: 0 97px;
   margin: 0;
   font-weight: 400;
   font-size: 12px;
@@ -856,6 +857,29 @@ a {
   .newsletter__container {
     max-width: 700px;
   }
+  .review__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .review__card {
+    max-width: 580px;
+  }
+  .review__text {
+    padding: 0 62px;
+  }
+  .review__text::before {
+    display: none;
+  }
+  .review__text::after {
+    display: none;
+  }
+  .review__swiper-button-prev {
+    left: 0;
+  }
+  .review__swiper-button-next {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -933,6 +957,28 @@ a {
   .newsletter__title {
     margin-bottom: 37px;
   }
+  .review__container {
+    padding-bottom: 50px;
+  }
+  .review__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
+  .review__swiper-button {
+    top: 45px;
+  }
+  .review__swiper-button-prev {
+    left: 50%;
+    margin-left: -105px;
+  }
+  .review__swiper-button-next {
+    right: 50%;
+    margin-right: -105px;
+  }
+  .review__text {
+    padding: 0 31px;
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -948,6 +994,9 @@ a {
   }
   .hotel-description {
     width: 440px;
+  }
+  .review__card {
+    max-width: 440px;
   }
 }
 
@@ -981,6 +1030,9 @@ a {
     height: 170px;
   }
   .newsletter__input {
+    max-width: 280px;
+  }
+  .review__card {
     max-width: 280px;
   }
 }

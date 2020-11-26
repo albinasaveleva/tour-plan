@@ -39,6 +39,24 @@
         width: 48.5%
     .newsletter__container
         max-width: 700px
+    .review
+        &__title
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 50px
+        &__card
+            max-width: 580px
+        &__text
+            padding: 0 62px
+            &::before
+                display: none
+            &::after
+                display: none
+        &__swiper-button-prev
+            left: 0
+        &__swiper-button-next
+            right: 0
+
 @media screen and ( max-width: 767px )
     .container
         max-width: 530px
@@ -86,6 +104,25 @@
             padding: 76px 0 83px
         &__title
             margin-bottom: 37px
+    .review
+        &__container
+            padding-bottom: 50px
+        &__card
+            530px
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 42px
+        &__swiper-button
+            top: 45px
+        &__swiper-button-prev
+            left: 50%
+            margin-left: -105px
+        &__swiper-button-next
+            right: 50%
+            margin-right: -105px
+        &__text
+            padding: 0 31px
 
 @media screen and ( max-width: 567px )
     .container
@@ -97,6 +134,9 @@
         height: 300px
     .hotel-description
         width: 440px 
+    .review
+        &__card
+            max-width: 440px
 @media screen and ( max-width: 479px )
     .container
         max-width: 280px
@@ -120,6 +160,8 @@
         height: 170px
     .newsletter__input
         max-width: 280px
-        
+    .review
+        &__card
+            max-width: 280px
     
     
