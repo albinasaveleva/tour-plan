@@ -997,7 +997,7 @@ a {
   .container {
     max-width: 530px;
   }
-  .navbar__search {
+  .navbar__form {
     display: none;
   }
   .user {
