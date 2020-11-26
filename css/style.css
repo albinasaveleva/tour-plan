@@ -814,6 +814,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -821,6 +824,7 @@ a {
 .activity {
   width: 255px;
   height: 255px;
+  padding: 25px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,15 +871,14 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  margin-left: 26px;
   margin-bottom: 18px;
   text-align: left;
 }
 
 .activity__button {
   z-index: 10;
-  margin-bottom: 24px;
-  margin-left: 26px;
+  display: inline-block;
+  margin-right: auto;
   color: #ffffff;
   text-align: center;
   padding: 7px 20px;
