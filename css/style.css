@@ -810,6 +810,9 @@ a {
   .hotel-description {
     width: 340px;
   }
+  .newsletter__container {
+    max-width: 710px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -853,9 +856,6 @@ a {
   }
   .map-wrapper {
     width: 48.5%;
-  }
-  .newsletter__container {
-    max-width: 700px;
   }
   .review__title {
     font-size: 30px;
