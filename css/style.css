@@ -105,6 +105,12 @@ a {
   height: 40px;
 }
 
+.icon_search {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,7 +264,13 @@ a {
   margin-bottom: 4px;
 }
 
-.star {
+.icon_star {
+  fill: #F2994A;
+  width: 6px;
+  height: 6px;
+}
+
+.icon_star:not(:last-child) {
   margin-right: 2px;
 }
 
@@ -374,6 +386,15 @@ a {
           transform: translateY(-50%);
   width: 30px;
   height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 99;
   background-size: 10px;
   background-repeat: no-repeat;
@@ -382,13 +403,18 @@ a {
 }
 
 .hotel__swiper-button-prev {
-  background-image: url(../assets/icons/button-prev.svg);
   left: 16px;
 }
 
 .hotel__swiper-button-next {
-  background-image: url(../assets/icons/button-next.svg);
   right: 16px;
+}
+
+.icon-button_light {
+  fill: #ffffff;
+  fill-opacity: .8;
+  width: 10px;
+  height: 17.5px;
 }
 
 .hotel-description {
@@ -493,6 +519,18 @@ a {
   margin-right: 8px;
 }
 
+.icon_user {
+  fill: #ffffff;
+  width: 14px;
+  height: 14px;
+}
+
+.icon_room {
+  fill: #ffffff;
+  width: 14px;
+  height: 14px;
+}
+
 .call-center {
   margin-bottom: 17px;
   display: -webkit-box;
@@ -526,7 +564,6 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  vertical-align: center;
   text-align: right;
   max-width: 140px;
   min-width: 80px;
@@ -534,7 +571,12 @@ a {
 
 .call-center__image {
   margin-right: 8px;
-  padding-top: 6px;
+}
+
+.icon_phone-call {
+  fill: #ffffff;
+  width: 14px;
+  height: 14px;
 }
 
 .booking__button {
@@ -722,13 +764,17 @@ a {
 }
 
 .review__swiper-button-prev {
-  background-image: url(../assets/icons/button-prev--dark.svg);
   left: 16px;
 }
 
 .review__swiper-button-next {
-  background-image: url(../assets/icons/button-next--dark.svg);
   right: 16px;
+}
+
+.icon-button_dark {
+  fill: #828282;
+  width: 10px;
+  height: 17.5px;
 }
 
 .profile {

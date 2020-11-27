@@ -14,8 +14,12 @@
     flex-basis: 100%
     display: flex
     margin-bottom: 4px
-.star
-    margin-right: 2px
+.icon_star
+    fill: $star
+    width: 6px
+    height: 6px
+    &:not(:last-child)
+        margin-right: 2px       
 .hotel-name__title
         margin: 0
         margin-right: 14px
@@ -92,17 +96,23 @@
         transform: translateY(-50%)
         width: 30px
         height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
         z-index: 99
         background-size: 10px
         background-repeat: no-repeat
         background-position: center
         cursor: pointer
     &__swiper-button-prev
-        background-image: url(../assets/icons/button-prev.svg)
         left: 16px
     &__swiper-button-next
-        background-image: url(../assets/icons/button-next.svg)
         right: 16px
+.icon-button_light
+    fill: $main-light
+    fill-opacity: .8
+    width: 10px
+    height: 17.5px
 .hotel-description
     width: 350px
     display: flex
@@ -157,6 +167,15 @@
         align-items: flex-start
     &__image
             margin-right: 8px
+.icon
+    &_user
+        fill: $main-light
+        width: 14px
+        height: 14px
+    &_room
+        fill: $main-light
+        width: 14px
+        height: 14px
 .call-center  
     margin-bottom: 17px
     display: flex
@@ -174,13 +193,15 @@
         display: flex
         justify-content: space-between
         align-items: flex-start
-        vertical-align: center
         text-align: right
         max-width: 140px
         min-width: 80px
     &__image
         margin-right: 8px
-        padding-top: 6px
+.icon_phone-call
+    fill: $main-light
+    width: 14px
+    height: 14px
 .booking__button
     display: flex
     flex-basis: 100%
