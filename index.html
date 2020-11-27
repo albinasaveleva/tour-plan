@@ -178,15 +178,15 @@
     <div class="container packages__container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages__block">
-            <div class="package">
-                <div class="package_image-block">
-                    <img src="assets/img/Hotel-Blue-Haven.jfif" alt="package" class="package__image">
-                    <span class="offer">
+            <div class="package package_active">
+                <div class="package__image-block package__image-block_active">
+                    <img src="assets/img/Hotel-Blue-Haven.jfif" alt="package" class="package__image package__image_active">
+                    <span class="offer package__offer">
                         Flash Offer
                     </span>
                 </div>
-                <div class="package-description">
-                    <div class="stars">
+                <div class="booking-information package__booking-information package__booking-information_active">
+                    <div class="stars booking-information__stars">
                         <svg class="icon icon_star">
                             <use xlink:href="assets/icons/sprite.svg#Star"></use>
                         </svg>
@@ -205,19 +205,19 @@
                     </div>
                     <h3 class="package__hotel-name" id="hotel-name">Hotel Blue Haven</h3>
                     <p>Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
+                    <div class="">
+                        <svg class="icon icon_user person-room__image">
+                            <use xlink:href="assets/icons/sprite.svg#location"></use>
+                        </svg>
+                        <span>1749 Wheeler Ridge  Delaware</span>
+                    </div>
                     <div class="person-room">
-                            <div class="person-room__guests">
-                            <svg class="icon icon_user person-room__image">
-                                <use xlink:href="assets/icons/sprite.svg#location"></use>
-                            </svg>
-                            <span>1749 Wheeler Ridge  Delaware</span>
-                            </div>
-                            <div class="person-room__guests">
+                        <div class="person-room__guests">
                             <svg class="icon icon_user person-room__image">
                                 <use xlink:href="assets/icons/sprite.svg#user"></use>
                             </svg>
                             <span>2 x Guests</span>
-                            </div>
+                        </div>
                         <div class="person-room__rooms">
                             <svg class="icon icon_room person-room__image">
                                 <use xlink:href="assets/icons/sprite.svg#room"></use>
@@ -234,10 +234,67 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="package">
+                <div class="package__image-block">
+                    <img src="assets/img/Hotel-Blue-Haven.jfif" alt="package" class="package__image">
+                    <span class="offer package__offer">
+                        Flash Offer
+                    </span>
+                </div>
+                <div class="booking-information">
+                    <div class="stars booking-information__stars inactive">
+                        <svg class="icon icon_star">
+                            <use xlink:href="assets/icons/sprite.svg#Star"></use>
+                        </svg>
+                        <svg class="icon icon_star">
+                            <use xlink:href="assets/icons/sprite.svg#Star"></use>
+                        </svg>
+                        <svg class="icon icon_star">
+                            <use xlink:href="assets/icons/sprite.svg#Star"></use>
+                        </svg>
+                        <svg class="icon icon_star">
+                            <use xlink:href="assets/icons/sprite.svg#Star"></use>
+                        </svg>
+                        <svg class="icon icon_star">
+                            <use xlink:href="assets/icons/sprite.svg#Star"></use>
+                        </svg>
+                    </div>
+                    <h3 class="package__hotel-name" id="hotel-name">Hotel Blue Haven</h3>
+                    <p class="inactive">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
+                    <div class="">
+                        <svg class="icon icon_user person-room__image">
+                            <use xlink:href="assets/icons/sprite.svg#location"></use>
+                        </svg>
+                        <span>1749 Wheeler Ridge  Delaware</span>
+                    </div>
+                    <div class="person-room">
+                        <div class="person-room__guests">
+                            <svg class="icon icon_user person-room__image">
+                                <use xlink:href="assets/icons/sprite.svg#user"></use>
+                            </svg>
+                            <span>2 x Guests</span>
+                        </div>
+                        <div class="person-room__rooms">
+                            <svg class="icon icon_room person-room__image">
+                                <use xlink:href="assets/icons/sprite.svg#room"></use>
+                            </svg>
+                            <span>1 x Room</span>    
+                        </div>
+                    </div>
+                    <div>
+                        <div class="price-block">
+                            <span class="price-block__old-price">$ 10,500</span>
+                            <strong class="price-block__price">$ 8,500</strong>
+                        </div>
+                        <div class="button book-now__button">Book Now</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
+
 <div class="newsletter" data-parallax="scroll" data-image-src="assets/img/newsletter-bg.jfif">
     <div class="container newsletter__container">
         <h2 class="newsletter__title">
