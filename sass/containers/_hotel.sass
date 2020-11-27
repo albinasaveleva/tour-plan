@@ -1,4 +1,4 @@
-.hotel-name
+.hotel-name-block
     padding: 23px 0 20px
     display: flex
     justify-content: space-between
@@ -10,6 +10,18 @@
         display: flex
         align-items: center
         flex-wrap: wrap
+    &__hotel-name
+        margin: 0
+        margin-right: 14px
+        font-weight: 700
+        font-size: 24px
+        line-height: 30px
+        text-transform: uppercase
+    &__description
+        margin: 0
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
 .stars
     flex-basis: 100%
     display: flex
@@ -20,18 +32,6 @@
     height: 6px
     &:not(:last-child)
         margin-right: 2px       
-.hotel-name__title
-        margin: 0
-        margin-right: 14px
-        font-weight: 700
-        font-size: 24px
-        line-height: 30px
-        text-transform: uppercase
-.hotel-name__description
-    margin: 0
-    font-weight: 400
-    font-size: 12px
-    line-height: 15px
 .offer
     padding: 3px 9px
     font-weight: 600
