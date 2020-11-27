@@ -63,6 +63,16 @@ a {
   right: 0;
 }
 
+.book-now__button {
+  z-index: 10;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 20px;
+  background: #EC1F46;
+  border-radius: 4px;
+}
+
 .navbar-top {
   background-color: #ffffff;
   padding: 40px 0;
@@ -921,15 +931,8 @@ a {
   text-align: left;
 }
 
-.activity__button {
-  z-index: 10;
-  display: inline-block;
+.book-now__button_activity {
   margin-right: auto;
-  color: #ffffff;
-  text-align: center;
-  padding: 7px 20px;
-  background: #EC1F46;
-  border-radius: 4px;
 }
 
 @media screen and (max-width: 1200px) {
