@@ -1,22 +1,37 @@
+.packages
+    &__container
+        padding: 40px 0 70px
+    &__title
+        font-weight: 700
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: $gray-1
+        margin: 0 auto 65px
+    &__block
+        display: grid
 .package
     display: flex
     flex-direction: column
-    background-color: $main-dark
     border-radius: 8px
     overflow: hidden
     max-width: 350px
+    min-height: 500px
     &_active
         flex-direction: row
         max-width: 730px
     &__image
         width: 100%
-        height: 250px
+        height: 100%
         object-fit: cover
         &_active
             height: auto
         &-block
             width: 100%
+            height: 250px
             position: relative
+            object-fit: cover
             &_active
                 width: 50%
     &__offer
@@ -24,6 +39,76 @@
         top: 26px
         left: 0
     &__booking-information
+        background-color: $main-dark
         width: 100%
+        flex-direction: column
+        justify-content: flex-start
+        padding: 30px 21px 25px 32px
         &_active
             width: 50%
+            padding: 46px 21px 30px 44px
+    &__hotel-name
+        font-weight: 700
+        font-size: 18px
+        line-height: 23px
+        color: $main-light
+        text-align: left
+        margin: 0
+        margin-bottom: 23px
+        &_active
+            margin-bottom: 34px
+        &-description
+            font-weight: 400
+            font-size: 14px
+            line-height: 160%
+            color: $main-light
+            margin: 0
+            margin-bottom: 34px
+            &_inactive
+                display: none
+    &__info
+        font-family: Nunito
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: $main-light
+        text-align: left
+        margin-bottom: 24px
+        &_active
+            margin-bottom: 37px
+    &__guests
+        display: flex
+        align-items: flex-start
+        margin-bottom: 8px
+    &__room
+        display: flex
+        align-items: flex-start
+    &__location
+        display: flex
+        align-items: flex-start
+        margin-bottom: 8px
+    &__icon
+        &_user
+            margin-right: 14px
+        &_room
+            margin-right: 14px
+        &_location
+            margin-right: 14px
+.stars_inactive
+    display: none
+.icon_location
+    fill: $main-light
+    width: 14px
+    height: 14px
+.price-block
+    &__wrapper
+        width: 100%
+        display: flex
+        align-items: flex-end
+        justify-content: space-between 
+    &__old-price
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+        color: $main-light
