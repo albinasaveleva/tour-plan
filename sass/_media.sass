@@ -11,7 +11,11 @@
         max-width: 710px 
     .activity
         width: 215px
-        height: 215px        
+        height: 215px   
+    .package
+        max-width: 300px
+        &_active
+            max-width: 630px     
 @media screen and ( max-width:  991px)
     .container
         max-width: 700px
@@ -72,7 +76,14 @@
             margin-bottom: 20px
         &:nth-last-child(even)
             margin-right: 20px
-            
+    .packages
+        &__block
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr)
+
+    .package
+        max-width: 350px
+        &_active
+            max-width: 730px
 @media screen and ( max-width: 767px )
     .container
         max-width: 530px
@@ -154,6 +165,25 @@
             margin-bottom: 20px
         &:nth-last-child(even)
             margin-right: 0
+    .packages
+        &__block
+            grid-template: repeat(5, 1fr) / 1fr
+    .package
+        max-width: 530px
+        &_active
+            flex-direction: column
+            max-width: 530px
+            grid-column-start: span 1
+            grid-row-start: span 2
+        &__image
+            &-block
+                &_active
+                    width: 100%
+                    height: 530px
+        &__booking-information
+            &_active
+                width: 100% 
+                min-height: 500px
 @media screen and ( max-width: 567px )
     .container
         max-width: 440px
@@ -169,6 +199,10 @@
             max-width: 440px
     .activity
         max-width: 440px
+    .package
+        max-width: 440px
+        &_active
+            max-width: 440px
 @media screen and ( max-width: 479px )
     .container
         max-width: 280px
@@ -197,4 +231,8 @@
             max-width: 280px
     .activity
         max-width: 280px
+    .package
+        max-width: 280px
+        &_active
+            max-width: 280px
     

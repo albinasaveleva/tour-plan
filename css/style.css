@@ -986,7 +986,9 @@ a {
   border-radius: 8px;
   overflow: hidden;
   max-width: 350px;
+  width: 100%;
   min-height: 500px;
+  height: 100%;
 }
 
 .package_active {
@@ -1007,7 +1009,7 @@ a {
 }
 
 .package__image_active {
-  height: auto;
+  height: 100%;
 }
 
 .package__image-block {
@@ -1020,6 +1022,7 @@ a {
 
 .package__image-block_active {
   width: 50%;
+  height: 100%;
 }
 
 .package__offer {
@@ -1032,6 +1035,9 @@ a {
   background-color: #0A223D;
   width: 100%;
   min-height: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1181,6 +1187,12 @@ a {
     width: 215px;
     height: 215px;
   }
+  .package {
+    max-width: 300px;
+  }
+  .package_active {
+    max-width: 630px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1265,6 +1277,17 @@ a {
   }
   .activity:nth-last-child(even) {
     margin-right: 20px;
+  }
+  .packages__block {
+    -ms-grid-rows: (1fr)[3];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+  .package {
+    max-width: 350px;
+  }
+  .package_active {
+    max-width: 730px;
   }
 }
 
@@ -1384,6 +1407,33 @@ a {
   .activity:nth-last-child(even) {
     margin-right: 0;
   }
+  .packages__block {
+    -ms-grid-rows: (1fr)[5];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(5, 1fr)/1fr;
+  }
+  .package {
+    max-width: 530px;
+  }
+  .package_active {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 530px;
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+    -ms-grid-row: span 2;
+        grid-row-start: span 2;
+  }
+  .package__image-block_active {
+    width: 100%;
+    height: 530px;
+  }
+  .package__booking-information_active {
+    width: 100%;
+    min-height: 500px;
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -1404,6 +1454,12 @@ a {
     max-width: 440px;
   }
   .activity {
+    max-width: 440px;
+  }
+  .package {
+    max-width: 440px;
+  }
+  .package_active {
     max-width: 440px;
   }
 }
@@ -1444,6 +1500,12 @@ a {
     max-width: 280px;
   }
   .activity {
+    max-width: 280px;
+  }
+  .package {
+    max-width: 280px;
+  }
+  .package_active {
     max-width: 280px;
   }
 }
