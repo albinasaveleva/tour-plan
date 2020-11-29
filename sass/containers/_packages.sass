@@ -11,6 +11,8 @@
         margin: 0 auto 65px
     &__block
         display: grid
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr)
+        gap: 30px
 .package
     display: flex
     flex-direction: column
@@ -21,6 +23,7 @@
     &_active
         flex-direction: row
         max-width: 730px
+        grid-column-start: span 2
     &__image
         width: 100%
         height: 100%
@@ -41,6 +44,7 @@
     &__booking-information
         background-color: $main-dark
         width: 100%
+        min-height: 250px
         flex-direction: column
         justify-content: flex-start
         padding: 30px 21px 25px 32px
