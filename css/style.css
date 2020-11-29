@@ -63,7 +63,7 @@ a {
   right: 0;
 }
 
-.book-now__button {
+.button__book-now {
   z-index: 10;
   display: inline-block;
   color: #ffffff;
@@ -948,7 +948,7 @@ a {
   text-align: left;
 }
 
-.book-now__button_activity {
+.button__book-now_activity {
   margin-right: auto;
 }
 
@@ -1145,7 +1145,7 @@ a {
   height: 14px;
 }
 
-.price-block__wrapper {
+.price-block-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
