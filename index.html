@@ -726,9 +726,11 @@
         <div class="message">
             <h3 class="message__title">Send us a message</h3>
             <form class="message__form">
-                <input type="text" name="Name" placeholder="Your Full Name*" class="message__input">
-                <input type="text" name="Phone" placeholder="Phone Number*" class="message__input">
-                <textarea name="Message"  placeholder="Message" class="message__textarea"></textarea>
+                <div class="message__inputs">
+                    <input type="text" name="Name" placeholder="Your Full Name*" class="message__input">
+                    <input type="text" name="Phone" placeholder="Phone Number*" class="message__input">
+                </div>
+                <textarea name="Message" rows="6" placeholder="Message" class="message__textarea"></textarea>
             </form>
             <div class="message__block">
                 <button class="button message__button">Send</button>
@@ -736,9 +738,9 @@
             </div>
         </div>
         <div class="footer__links">
-                <a href="#" class="footer-bottom__link">Disclaimer</a>
-                <a href="#" class="footer-bottom__link">Conditions of use</a>
-                <a href="#" class="footer-bottom__link">Cancellation policy</a>
+                <a href="#" class="footer__link">Disclaimer</a>
+                <a href="#" class="footer__link">Conditions of use</a>
+                <a href="#" class="footer__link">Cancellation policy</a>
         </div>
         <img src="assets/img/cards.png" alt="cards" class="footer__image">
     </div>
