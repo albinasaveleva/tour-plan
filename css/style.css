@@ -969,9 +969,8 @@ a {
 .packages__block {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
   -ms-grid-columns: (1fr)[3];
-      grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -1702,9 +1701,8 @@ a {
     margin-right: 20px;
   }
   .packages__block {
-    -ms-grid-rows: (1fr)[3];
     -ms-grid-columns: (1fr)[2];
-        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
   }
   .package {
     max-width: 350px;
@@ -1831,9 +1829,8 @@ a {
     margin-right: 0;
   }
   .packages__block {
-    -ms-grid-rows: (1fr)[5];
     -ms-grid-columns: 1fr;
-        grid-template: repeat(5, 1fr)/1fr;
+        grid-template-columns: 1fr;
   }
   .package {
     max-width: 530px;
