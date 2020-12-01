@@ -1180,7 +1180,13 @@ a {
   grid-gap: 23px;
 }
 
-.footer__container__img {
+.footer__logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__img {
   max-width: 166px;
   max-height: 192px;
   -ms-grid-column: 1;
@@ -1412,7 +1418,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 20px;
+  margin-top: 5px;
 }
 
 .contact-wrapper {
@@ -1487,6 +1497,7 @@ a {
   border: none;
   border-radius: 4px;
   margin-bottom: 23px;
+  resize: vertical;
 }
 
 .message__block {
@@ -1754,6 +1765,8 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .categories {
     -ms-grid-column: 1;
@@ -1979,9 +1992,8 @@ a {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .social-network__title {
     margin-bottom: 20px;
