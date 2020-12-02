@@ -128,8 +128,9 @@
 @media screen and ( max-width: 767px )
     .container
         max-width: 530px
-    .navbar__form
-        display: none
+    .navbar
+        &__form
+            display: none
     .user
         display: none
     .navbar-bottom
@@ -260,6 +261,13 @@
         grid-row: 7 / 8
         &__input
             width: 100%
+        &__block
+            justify-content: flex-start
+        &__text
+            order: -1
+            text-align: left
+            margin-bottom: 15px
+            flex-basis: 100%
     .footer
         &-bottom
             grid-column: 1 / 2
