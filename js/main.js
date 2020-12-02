@@ -47,12 +47,14 @@ function init(){
         }));
 }
 
-var mobileMenuButton = document.querySelector('.burger-menu');
+const mobileMenuButton = document.querySelector('.burger-menu');
+const mainPage = document.querySelector('body');
 
 mobileMenuButton.addEventListener('click', function() {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_mobile');
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_hidden');
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_scroll');
   document.querySelector('.user-mobile').classList.toggle('user-mobile_visible');
   document.querySelector('.form-mobile').classList.toggle('form-mobile_visible');
-
+  mainPage.classList.toggle('body_scrollless');
 })

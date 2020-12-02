@@ -10,6 +10,10 @@ body {
   color: #333333;
 }
 
+.body_scrollless {
+  overflow-y: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -1894,7 +1898,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 99;
   }
   .user_hidden {
     display: none;
@@ -1917,9 +1921,13 @@ a {
     top: 78px;
     left: 0;
     right: 0;
+    bottom: 0;
   }
   .navbar-bottom__container_mobile {
     padding: 31px 0 68px;
+  }
+  .navbar-bottom_scroll {
+    overflow-y: scroll;
   }
   .menu_mobile {
     -webkit-box-orient: vertical;
