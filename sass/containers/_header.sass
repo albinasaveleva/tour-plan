@@ -27,7 +27,6 @@
     width: 16px
     height: 16px
     fill: $main-light
-
 .user 
     display: flex
     align-items: center
@@ -44,6 +43,40 @@
         line-height: 18px
         text-align: left
         vertical-align: top
+    &-mobile
+        display: none
+        flex-direction: column
+        align-items: center
+        margin-bottom: 27px
+        &__avatar
+            width: 40px
+            height: 40px
+            object-fit: cover
+            border-radius: 50%
+            margin-bottom: 10px
+        &__name 
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            text-align: left
+            vertical-align: top
+            color: $main-light
+.form-mobile
+    display: none
+    position: relative
+    border-radius: 6px
+    overflow: hidden
+    margin-bottom: 39px
+    &__input
+        width: 350px
+        border: none
+        text-align: left
+        &:focus 
+            outline: none
+    &__button
+        position: absolute
+        top: 0
+        right: 0
 .burger-menu
     display: none
     flex-direction: column

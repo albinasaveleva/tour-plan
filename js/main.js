@@ -46,3 +46,13 @@ function init(){
           iconColor: '#0095b6'
         }));
 }
+
+var mobileMenuButton = document.querySelector('.burger-menu');
+
+mobileMenuButton.addEventListener('click', function() {
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_mobile');
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_hidden');
+  document.querySelector('.user-mobile').classList.toggle('user-mobile_visible');
+  document.querySelector('.form-mobile').classList.toggle('form-mobile_visible');
+
+})

@@ -130,13 +130,42 @@
         max-width: 530px
     .navbar
         &__form
-            display: none
+            &_hidden
+                display: none
+        &-mobile_fixed
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            z-index: 10
     .user
-        display: none
+        &_hidden
+            display: none
+        &-mobile
+            &_visible
+                display: flex
+    .form-mobile
+        display: flex
     .navbar-bottom
-        display: none
+        &_hidden
+            display: none
+        &_mobile
+            position: fixed
+            top: 78px
+            left: 0
+            right: 0
+        &__container_mobile
+            padding: 31px 0 68px
+    .menu
+        &_mobile
+            flex-direction: column
+            justify-content: center
+        &__link:not(:last-child)
+            margin-bottom: 20px
     .burger-menu
         display: flex
+    .breadcrumb
+        padding-top: 78px
     .hotel-name-block
         padding-top: 5px
         &__wrapper
@@ -299,6 +328,8 @@
 @media screen and ( max-width: 479px )
     .container
         max-width: 280px
+    .form-mobile__input
+        max-width: 245px
     .hotel-information-block
         padding: 20px 0 40px
     .hotel__swiper-container

@@ -18,13 +18,13 @@
 </head>
 
 <body>
-<header class="navbar">
+<header class="navbar navbar-mobile_fixed">
     <div class="navbar-top">
         <div class="container navbar-top__container">
             <a href="#" class="logo">
                 <img src="assets/img/horizontal-logo.svg" class="logo__image" alt="Logo: Best Tour Plan">
             </a>
-            <form action="#" class="form navbar__form">
+            <form action="#" class="form navbar__form navbar__form_hidden">
                 <input type="text" class="navbar__input form__input" placeholder="Search Location">
                 <button class="button form__button navbar__button">
                     <svg class="icon icon_search">
@@ -32,7 +32,7 @@
                     </svg>
                 </button>
             </form>
-            <a class="user">
+            <a class="user user_hidden">
                 <img src="assets/img/avatar.jfif" class="user__avatar" alt="Avatar">
                 <span class="user__name">Nathan</span>
             </a>
@@ -43,9 +43,21 @@
             </div>
         </div>
     </div>
-    <div class="navbar-bottom">
-        <div class="container">
-            <nav class="menu navbar__menu">
+    <div class="navbar-bottom navbar-bottom_hidden">
+        <div class="container navbar-bottom__container_mobile ">
+            <nav class="menu navbar__menu menu_mobile">
+                <a class="user-mobile">
+                    <img src="assets/img/avatar.jfif" class="user-mobile__avatar" alt="Avatar">
+                    <span class="user-mobile__name">Nathan</span>
+                </a>
+                <form action="#" class="form-mobile">
+                    <input type="text" class="form-mobile__input navbar__input" placeholder="Search Location">
+                    <button class="button form-mobile__button navbar__button">
+                        <svg class="icon icon_search">
+                            <use xlink:href="assets/icons/sprite.svg#search-icon"></use>
+                        </svg>
+                    </button>
+                </form>
                 <a href="#" class="menu__link navbar__link">All Deals</a>
                 <a href="#" class="menu__link navbar__link">Hotels</a>
                 <a href="#" class="menu__link navbar__link">Activities</a>
@@ -671,17 +683,23 @@
         <div class="social-network">
             <h3 class="social-network__title">Social Network</h3>
             <div class="social-networks">
-                <svg class="icon icon_facebook">
-                    <use xlink:href="assets/icons/sprite.svg#facebook"></use>
-                </svg>
-                <svg class="icon icon_instagram">
-                    <use xlink:href="assets/icons/sprite.svg#instagram"></use>
-                </svg>
-                <svg class="icon icon_youtube">
-                    <use xlink:href="assets/icons/sprite.svg#youtube"></use>
-                </svg>
+                <a href="#">
+                    <svg class="icon icon_facebook">
+                        <use xlink:href="assets/icons/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon icon_instagram">
+                        <use xlink:href="assets/icons/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon icon_youtube">
+                        <use xlink:href="assets/icons/sprite.svg#youtube"></use>
+                    </svg>
+                </a>
             </div>
-        </div>>
+        </div>
         <div class="contact-details">
             <h3 class="contact-details__title">Contact Details</h3>
             <p class="contact-details__subtitle">Feel free to contact us by phone, email or by our contact form</p>

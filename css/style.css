@@ -172,6 +172,60 @@ a {
   vertical-align: top;
 }
 
+.user-mobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 27px;
+}
+
+.user-mobile__avatar {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-mobile__name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  color: #ffffff;
+}
+
+.form-mobile {
+  display: none;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 39px;
+}
+
+.form-mobile__input {
+  width: 350px;
+  border: none;
+  text-align: left;
+}
+
+.form-mobile__input:focus {
+  outline: none;
+}
+
+.form-mobile__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .burger-menu {
   display: none;
   -webkit-box-orient: vertical;
@@ -1832,19 +1886,60 @@ a {
   .container {
     max-width: 530px;
   }
-  .navbar__form {
+  .navbar__form_hidden {
     display: none;
   }
-  .user {
+  .navbar-mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .user_hidden {
     display: none;
   }
-  .navbar-bottom {
+  .user-mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-bottom_hidden {
     display: none;
+  }
+  .navbar-bottom_mobile {
+    position: fixed;
+    top: 78px;
+    left: 0;
+    right: 0;
+  }
+  .navbar-bottom__container_mobile {
+    padding: 31px 0 68px;
+  }
+  .menu_mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu__link:not(:last-child) {
+    margin-bottom: 20px;
   }
   .burger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .breadcrumb {
+    padding-top: 78px;
   }
   .hotel-name-block {
     padding-top: 5px;
@@ -2113,6 +2208,9 @@ a {
 @media screen and (max-width: 479px) {
   .container {
     max-width: 280px;
+  }
+  .form-mobile__input {
+    max-width: 245px;
   }
   .hotel-information-block {
     padding: 20px 0 40px;
