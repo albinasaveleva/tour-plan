@@ -99,6 +99,10 @@ a {
   height: 14px;
 }
 
+.hotel-name-block__block_success {
+  margin-bottom: 20px;
+}
+
 .navbar-top {
   background-color: #ffffff;
   padding: 40px 0;
@@ -1812,12 +1816,15 @@ a {
   .footer__img {
     max-width: 104px;
     max-height: 120px;
+  }
+  .footer__logo {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+    margin-top: 0;
   }
   .social-network {
     -ms-grid-column: 2;
@@ -1895,6 +1902,9 @@ a {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 530px;
+  }
+  .hotel-name-block__wrapper_success {
+    padding-top: 100px;
   }
   .navbar__form_hidden {
     display: none;
