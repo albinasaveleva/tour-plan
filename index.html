@@ -515,9 +515,9 @@
             <span class="newsletter__subtitle">subscribe to our</span>
             Newsletter
         </h2>
-        <form action="#" class="form newsletter__form">
+        <form action="#" id="newsletter" class="form newsletter__form">
             <input type="text" class="newsletter__input form__input" placeholder="Your email address">
-            <button class="button newsletter__button form__button">Send</button>
+            <button class="button newsletter__button form__button" type="submit">Send</button>
         </form>
     </div>
 </div>
@@ -624,7 +624,7 @@
             <div class="activity">
                 <img src="assets/img/activity-1.jfif" class="activity__image" alt="activity">
                 <span class="activity__name">The curious corner 
-                    of chamarel</span>
+                    of&nbsp;chamarel</span>
                 <div class="button button__book-now button__book-now_activity">Book Now</div>
             </div>
             <div class="activity">
@@ -636,7 +636,7 @@
             <div class="activity">
                 <img src="assets/img/activity-3.jfif" class="activity__image" alt="activity">
                 <span class="activity__name">Tamarind falls hiking
-                    trip - full day</span>
+                    trip&nbsp;-&nbsp;full day</span>
                 <div class="button button__book-now button__book-now_activity">Book Now</div>
             </div>
             <div class="activity">
@@ -743,17 +743,17 @@
         </div>
         <div class="message">
             <h3 class="message__title">Send us a message</h3>
-            <form class="message__form">
+            <form action="send.php" method="POST" id="message" class="message__form">
                 <div class="message__inputs">
-                    <input type="text" name="Name" placeholder="Your Full Name*" class="message__input">
-                    <input type="text" name="Phone" placeholder="Phone Number*" class="message__input">
+                    <input type="text" name="name" placeholder="Your Full Name*" class="message__input">
+                    <input type="text" name="phone" placeholder="Phone Number*" class="message__input">
                 </div>
-                <textarea name="Message" rows="6" placeholder="Message" class="message__textarea"></textarea>
+                <textarea name="message" rows="6" placeholder="Message" class="message__textarea"></textarea>
+                <div class="message__block">
+                    <button class="button message__button" type="submit">Send</button>
+                    <span class="message__text">* Required Fields</span>
+                </div>
             </form>
-            <div class="message__block">
-                <button class="button message__button">Send</button>
-                <span class="message__text">* Required Fields</span>
-            </div>
         </div>
         <div class="footer-bottom">
             <div class="footer__links">
