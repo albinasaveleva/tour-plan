@@ -8,14 +8,20 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-
+$email = $_POST['email'];
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
+$title_message = "Новое обращение Best Tour Plan";
+$body_message = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Номер телефона:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
+";
+
+$title_subscription = "Подписка на рассылку";
+$body_subscription = "
+<b>Email:</b> $email<br>
+
 ";
 
 // Настройки PHPMailer
@@ -37,11 +43,18 @@ try {
 
     // Получатель письма
     $mail->addAddress('saveleva.albina.96@mail.ru');  
+   
+    $mail->isHTML(true);
 
-// Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
+    if ($email->is_null || $email == "") {
+
+        // Отправка сообщения
+        $mail->Subject = $title_message;
+        $mail->Body = $body_message;  
+    } else {
+        $mail->Subject = $title_subscription;
+        $mail->Body = $body_subscription;  
+}  
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -53,5 +66,9 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+if ($email->is_null || $email == "") {
+    header('Location: thankyou_message.html');
+} else {
+    header('Location: thankyou_subscription.html');
+}
 ?>
