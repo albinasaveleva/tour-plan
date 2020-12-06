@@ -1690,7 +1690,12 @@ a {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 143, 223, 0.39);
+  display: none;
   z-index: 100;
+}
+
+.modal_visibility {
+  display: block;
 }
 
 .modal__title {
@@ -1782,9 +1787,7 @@ a {
 
 .modal-dialog {
   max-width: 478px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1799,6 +1802,12 @@ a {
   padding: 33px 88px;
 }
 
+.modal-dialog_visibility {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .icon_close {
   width: 16px;
   height: 16px;
@@ -1807,6 +1816,10 @@ a {
 
 .close {
   margin: -16px -70px 0 auto;
+}
+
+.close:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {

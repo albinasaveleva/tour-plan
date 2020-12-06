@@ -5,7 +5,10 @@
     bottom: 0
     right: 0
     background-color: rgba(0, 143, 223, 0.39)
+    display: none
     z-index: 100
+    &_visibility
+        display: block
     &__title
         font-weight: 700
         font-size: 18px
@@ -67,7 +70,7 @@
         text-align: right
 .modal-dialog
     max-width: 478px
-    display: flex
+    display: none
     flex-direction: column
     position: fixed
     top: 50%
@@ -76,9 +79,13 @@
     background-color: #0A223D
     border-radius: 8px
     padding: 33px 88px
+    &_visibility
+        display: flex
 .icon_close
     width: 16px
     height: 16px
     fill: $main-light
 .close
     margin: -16px -70px 0 auto
+    &:hover
+        cursor: pointer
