@@ -73,5 +73,11 @@ $(document).ready(function() {
     modal.removeClass('modal_visibility');
     modalDialog.removeClass('modal-dialog_visibility');
   });
-
+  
+  $(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+      modal.removeClass('modal_visibility');
+      modalDialog.removeClass('modal-dialog_visibility');
+    }
+});
 });
