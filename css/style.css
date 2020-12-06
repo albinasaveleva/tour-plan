@@ -1782,6 +1782,13 @@ a {
 
 .modal-dialog {
   max-width: 478px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1790,6 +1797,16 @@ a {
   background-color: #0A223D;
   border-radius: 8px;
   padding: 33px 88px;
+}
+
+.icon_close {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
+.close {
+  margin: -16px -70px 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
