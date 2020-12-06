@@ -1787,6 +1787,7 @@ a {
 
 .modal-dialog {
   max-width: 478px;
+  width: 100%;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2035,6 +2036,9 @@ a {
   .footer__links {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  .modal__button {
+    margin-bottom: 15px;
   }
 }
 
@@ -2338,6 +2342,16 @@ a {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal-dialog {
+    padding: 33px 50px;
+    max-width: 400px;
+  }
+  .modal__button {
+    width: 100%;
+  }
+  .close {
+    margin-right: -35px;
+  }
 }
 
 @media screen and (max-width: 567px) {
@@ -2365,6 +2379,16 @@ a {
   }
   .package_active {
     max-width: 440px;
+  }
+  .modal-dialog {
+    padding: 33px;
+    max-width: 400px;
+  }
+  .modal-dialog {
+    max-width: 350px;
+  }
+  .close {
+    margin-right: -15px;
   }
 }
 
@@ -2414,6 +2438,9 @@ a {
   }
   .package_active {
     max-width: 280px;
+  }
+  .modal-dialog {
+    max-width: 245px;
   }
 }
 /*# sourceMappingURL=style.css.map */
