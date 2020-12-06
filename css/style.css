@@ -99,8 +99,22 @@ a {
   height: 14px;
 }
 
-.hotel-name-block__block_success {
-  margin-bottom: 20px;
+.hotel-name-block__wrapper_success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hotel-name-block__hotel-name_success {
+  padding-bottom: 15px;
+}
+
+.hotel-name-block__hotel-name-description_success {
+  padding-bottom: 15px;
 }
 
 .navbar-top {
