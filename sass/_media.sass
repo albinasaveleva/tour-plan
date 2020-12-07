@@ -125,9 +125,7 @@
             grid-column: 1 / 5
             grid-row: 9 / 10
         &__links
-            transform: translateX(0)
-    .modal__button
-        margin-bottom: 15px        
+            transform: translateX(0)     
 @media screen and ( max-width: 767px )
     .container
         max-width: 530px
@@ -162,8 +160,7 @@
             bottom: 0
         &__container_mobile
             padding: 31px 0 68px
-        &_scroll
-            overflow-y: scroll
+        
     .menu
         &_mobile
             flex-direction: column
@@ -313,15 +310,7 @@
         &__links
             margin-bottom: 10px
         &__links
-            flex-basis: 100%    
-    .modal-dialog
-        padding: 33px 50px
-        max-width: 400px
-    .modal
-        &__button
-            width: 100%
-    .close
-        margin-right: -35px
+            flex-basis: 100%       
 @media screen and ( max-width: 567px )
     .container
         max-width: 440px
@@ -342,12 +331,12 @@
         &_active
             max-width: 440px
     .modal-dialog
-        padding: 33px
+        padding: 33px 70px
         max-width: 400px
     .modal-dialog
-        max-width: 350px
+        max-width: 440px
     .close
-        margin-right: -15px
+        margin-right: -50px
 @media screen and ( max-width: 479px )
     .container
         max-width: 280px
@@ -383,4 +372,9 @@
         &_active
             max-width: 280px
     .modal-dialog
-        max-width: 245px
+        max-width: 280px
+        padding: 33px
+    .modal__button
+        margin-bottom: 15px
+    .close
+        margin-right: -15px

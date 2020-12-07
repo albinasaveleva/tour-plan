@@ -64,20 +64,27 @@ $(document).ready(function() {
   const modalClose = $("[data-toggle=modal-close]");
   const modal = $('.modal');
   const modalDialog = $('.modal-dialog');
+  const body = $('body');
 
   modalOpen.on('click', function() {
     modal.addClass('modal_visibility');
     modalDialog.addClass('modal-dialog_visibility');
+    body.addClass('body_scrollless');
+    modalDialog.addClass('modal-dialog_scroll');
   });
   modalClose.on('click', function() {
     modal.removeClass('modal_visibility');
     modalDialog.removeClass('modal-dialog_visibility');
+    body.removeClass('body_scrollless');
+    modalDialog.removeClass('modal-dialog_scroll');
   });
   
   $(document).keydown(function(e) {
     if (e.keyCode == 27) {
       modal.removeClass('modal_visibility');
       modalDialog.removeClass('modal-dialog_visibility');
+      body.removeClass('body_scrollless');
+      modalDialog.removeClass('modal-dialog_scroll');
     }
 });
 });
