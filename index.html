@@ -516,7 +516,9 @@
             Newsletter
         </h2>
         <form action="send.php" method="POST" class="form newsletter__form">
-            <input type="text" class="newsletter__input form__input" name="email" placeholder="Your email address">
+            <div class="newsletter__input-group">
+                <input type="email" class="newsletter__input form__input" name="email_subscription" placeholder="Your email address">
+            </div>
             <button class="button newsletter__button form__button" type="submit">Send</button>
         </form>
     </div>
@@ -745,10 +747,14 @@
             <h3 class="message__title">Send us a message</h3>
             <form action="send.php" method="POST" class="message__form">
                 <div class="message__inputs">
-                    <input type="text" name="name" placeholder="Your Full Name*" class="message__input">
-                    <input type="text" name="phone" placeholder="Phone Number*" class="message__input">
+                    <div class="message__input-group">
+                        <input type="text" name="name_message" placeholder="Your Full Name*" class="message__input" required minlength="2">
+                    </div>
+                    <div class="message__input-group">
+                        <input type="tel" name="phone_message" placeholder="Phone Number*" class="message__input phone-number" required>
+                    </div>
                 </div>
-                <textarea name="message" rows="6" placeholder="Message" class="message__textarea"></textarea>
+                <textarea name="message_message" rows="6" placeholder="Message" class="message__textarea"></textarea>
                 <div class="message__block">
                     <button class="button message__button" type="submit">Send</button>
                     <span class="message__text">* Required Fields</span>
@@ -775,11 +781,11 @@
             <h3 class="modal__title">Booking</h3>
                 <form action="send.php" method="POST" class="modal__form">
                     <div class="modal__inputs">
-                        <input type="text" placeholder="Your Full Name*" class="modal__input">
-                        <input type="text" placeholder="Phone Number*" class="modal__input">
-                        <input type="text" placeholder="Email*" class="modal__input">
+                        <input type="text" name="name_booking" placeholder="Your Full Name*" class="modal__input" required minlength="2">
+                        <input type="tel" name="phone_booking" placeholder="Phone Number*" class="modal__input phone-number" required>
+                        <input type="email" name="email_booking" placeholder="Email*" class="modal__input" required>
                     </div>
-                    <textarea placeholder="Message" class="modal__textarea"></textarea>
+                    <textarea name="message_booking" placeholder="Message" class="modal__textarea"></textarea>
                     <div class="modal__block">
                         <button class="button modal__button" type="submit">Send</button>
                         <span class="modal__text">* Required Fields</span>
@@ -793,6 +799,8 @@
 <script src="js/parallax.min.js"></script>
 
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

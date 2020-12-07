@@ -5,23 +5,37 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
-$email = $_POST['email'];
+$name_message = $_POST['name_message'];
+$phone_message = $_POST['phone_message'];
+$message_message = $_POST['message_message'];
+$email_subscription = $_POST['email_subscription'];
+$name_booking = $_POST['name_booking'];
+$phone_booking = $_POST['phone_booking'];
+$message_booking = $_POST['message_booking'];
+$email_booking = $_POST['email_booking'];
+
 // Формирование самого письма
 $title_message = "Новое обращение Best Tour Plan";
 $body_message = "
 <h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Номер телефона:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Имя:</b> $name_message<br>
+<b>Номер телефона:</b> $phone_message<br><br>
+<b>Сообщение:</b><br>$message_message
 ";
 
-$title_subscription = "Подписка на рассылку";
+$title_subscription = "Подписка на рассылку Best Tour Plan";
 $body_subscription = "
-<b>Email:</b> $email<br>
+<b>Email:</b> $email_subscription<br>
 
+";
+
+$title_booking = "Заявка на бронирование Best Tour Plan";
+$body_booking = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name_booking<br>
+<b>Номер телефона:</b> $phone_booking<br><br>
+<b>Email:</b> $email_booking<br><br>
+<b>Сообщение:</b><br>$message_booking
 ";
 
 // Настройки PHPMailer
@@ -43,18 +57,19 @@ try {
 
     // Получатель письма
     $mail->addAddress('saveleva.albina.96@mail.ru');  
-   
     $mail->isHTML(true);
 
-    if ($email->is_null || $email == "") {
-
-        // Отправка сообщения
+    // Отправка сообщения
+    if ($name_message != "") {
         $mail->Subject = $title_message;
         $mail->Body = $body_message;  
+    } else if ($name_booking != "") {
+        $mail->Subject = $title_booking;
+        $mail->Body = $body_booking;  
     } else {
         $mail->Subject = $title_subscription;
-        $mail->Body = $body_subscription;  
-}  
+        $mail->Body = $body_subscription;
+    }  
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -66,8 +81,10 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if ($email->is_null || $email == "") {
-    header('Location: thankyou_message.html');
+if ($name_message != "") {
+    header('Location: thankyou_message.html');  
+} else if ($name_booking != "") {
+    header('Location: thankyou_booking.html');  
 } else {
     header('Location: thankyou_subscription.html');
 }

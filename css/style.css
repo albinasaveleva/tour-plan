@@ -117,6 +117,24 @@ a {
   padding-bottom: 15px;
 }
 
+.error {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
 .navbar-top {
   background-color: #ffffff;
   padding: 40px 0;
@@ -767,6 +785,16 @@ a {
 
 .newsletter__form {
   z-index: 10;
+}
+
+.newsletter__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .newsletter__input {
@@ -1557,10 +1585,15 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.message__input-group {
+  width: 47%;
 }
 
 .message__input {
-  width: 47%;
+  width: 100%;
   padding: 18px 23px;
   background-color: #ffffff;
   font-weight: 400;
@@ -1569,7 +1602,6 @@ a {
   color: #BDBDBD;
   border: none;
   border-radius: 4px;
-  margin-bottom: 15px;
 }
 
 .message__textarea {
@@ -1723,12 +1755,16 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 15px;
   text-align: center;
 }
 
 .modal__form {
   width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
 }
 
 .modal__inputs {
@@ -1740,6 +1776,7 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 .modal__input {
@@ -1752,7 +1789,7 @@ a {
   color: #BDBDBD;
   border: none;
   border-radius: 4px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__textarea {
@@ -1825,10 +1862,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.modal-dialog_scroll {
-  overflow-y: scroll;
 }
 
 .icon_close {
@@ -2263,6 +2296,12 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
   }
+  .message__input-group {
+    margin-bottom: 15px;
+  }
+  .message__inputs {
+    margin-bottom: 0;
+  }
   .social-network {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -2323,7 +2362,7 @@ a {
     -ms-grid-row-span: 1;
     grid-row: 7 / 8;
   }
-  .message__input {
+  .message__input-group {
     width: 100%;
   }
   .message__block {
@@ -2454,6 +2493,12 @@ a {
   }
   .close {
     margin-right: -15px;
+  }
+}
+
+@media (max-height: 550px) {
+  .modal-dialog_scroll {
+    height: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -66,6 +66,10 @@ $(document).ready(function() {
   const modalDialog = $('.modal-dialog');
   const body = $('body');
 
+  const modalForm = $('');
+  const subscriptionForm = $('');
+  const messageForm = $('.message__form');
+
   modalOpen.on('click', function() {
     modal.addClass('modal_visibility');
     modalDialog.addClass('modal-dialog_visibility');
@@ -78,7 +82,6 @@ $(document).ready(function() {
     body.removeClass('body_scrollless');
     modalDialog.removeClass('modal-dialog_scroll');
   });
-  
   $(document).keydown(function(e) {
     if (e.keyCode == 27) {
       modal.removeClass('modal_visibility');
@@ -86,5 +89,56 @@ $(document).ready(function() {
       body.removeClass('body_scrollless');
       modalDialog.removeClass('modal-dialog_scroll');
     }
-});
+  });
+
+  $('.phone-number').mask('+7 (999) 999-99-99');
+
+  $('.newsletter__form').validate({
+      messages: {
+        email_subscription: {
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      },
+    });
+  
+  $('.message__form').validate({
+      rules: {
+        name_message: {
+          required: true,
+          minlength: 2
+        }
+      },
+      messages: {
+        name_message: {
+          required: "Please specify your name",
+          minlength: "Your name must contain at least 2 characters"
+        },
+        phone_message: {
+          required: "Please specify your phone number"
+        },
+      },
+    });
+ 
+  $('.modal__form').validate({
+      rules: {
+        name_booking: {
+          required: true,
+          minlength: 2
+        },
+      },
+      messages: {
+        name_booking: {
+          required: "Please specify your name",
+          minlength: "Your name must contain at least 2 characters"
+        },
+        phone_booking: {
+          required: "Please specify your phone number"
+        },
+        email_booking: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
+      },
+    });
+
 });
