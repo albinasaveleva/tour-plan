@@ -31,7 +31,7 @@
         height: 100%
         object-fit: cover
         &_active
-            height: 100%
+            height: auto
         &-block
             width: 100%
             height: 250px
@@ -39,11 +39,18 @@
             object-fit: cover
             &_active
                 width: 50%
-                height: 100%
     &__offer
         position: absolute
         top: 26px
         left: 0
+        font-size: 8px
+        line-height: 10px
+        padding: 6px 10px 4px 9px
+        border-radius: 0px 4px 4px 0px
+        &_active
+            font-size: 12px
+            line-height: 15px
+            padding: 9px 22px 9px 12px
     &__booking-information
         background-color: $main-dark
         width: 100%
@@ -51,10 +58,10 @@
         flex-grow: 1
         flex-direction: column
         justify-content: flex-start
-        padding: 30px 21px 25px 32px
+        padding: 30px 22px 25px 32px
         &_active
             width: 50%
-            padding: 46px 21px 30px 44px
+            padding: 46px 21px 30px 45px
     &__hotel-name
         font-weight: 700
         font-size: 18px
@@ -62,16 +69,16 @@
         color: $main-light
         text-align: left
         margin: 0
-        margin-bottom: 23px
+        margin-bottom: 26px
         &_active
-            margin-bottom: 34px
+            margin-bottom: 28px
         &-description
             font-weight: 400
             font-size: 14px
             line-height: 160%
             color: $main-light
             margin: 0
-            margin-bottom: 34px
+            margin-bottom: 48px
             &_inactive
                 display: none
     &__info
@@ -81,9 +88,10 @@
         line-height: 15px
         color: $main-light
         text-align: left
-        margin-bottom: 24px
+        margin-bottom: 22px
         &_active
-            margin-bottom: 37px
+            margin-bottom: 35px
+            margin-left: 3px
     &__guests
         display: flex
         align-items: flex-start
@@ -114,9 +122,11 @@
         display: flex
         align-items: flex-end
         justify-content: space-between 
+        margin-left: 2px
     &__old-price
         font-weight: 400
         font-size: 14px
         line-height: 18px
         text-decoration-line: line-through
         color: $main-light
+        margin-bottom: 4px

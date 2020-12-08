@@ -68,11 +68,14 @@ a {
 }
 
 .button__book-now {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
   z-index: 10;
   display: inline-block;
   color: #ffffff;
   text-align: center;
-  padding: 7px 21px;
+  padding: 10px 27px;
   background: #EC1F46;
   border-radius: 4px;
 }
@@ -159,7 +162,7 @@ textarea {
 
 .navbar__form {
   margin-right: auto;
-  margin-left: 88px;
+  margin-left: 90px;
 }
 
 .navbar__input {
@@ -348,7 +351,7 @@ textarea {
 
 .breadcrumb__item:not(:last-child)::after {
   content: '/';
-  margin: 0 3px;
+  margin: 0 2.8px;
 }
 
 .hotel-name-block {
@@ -416,14 +419,15 @@ textarea {
   width: 8px;
   height: 8px;
   margin-top: 2px;
+  margin-left: 1px;
 }
 
 .icon_star:not(:last-child) {
-  margin-right: 2px;
+  margin-right: 1px;
 }
 
 .offer {
-  padding: 3px 9px;
+  padding: 4px 9px;
   font-weight: 600;
   font-size: 10px;
   line-height: 13px;
@@ -821,7 +825,7 @@ textarea {
 }
 
 .review__container {
-  padding: 40px 0 70px;
+  padding: 42px 0 70px;
 }
 
 .review__title {
@@ -904,11 +908,11 @@ textarea {
 }
 
 .review__swiper-button-prev {
-  left: 16px;
+  left: 30px;
 }
 
 .review__swiper-button-next {
-  right: 16px;
+  right: 7px;
 }
 
 .icon-button_dark {
@@ -1010,7 +1014,7 @@ textarea {
 .activity {
   width: 255px;
   height: 255px;
-  padding: 25px;
+  padding: 24px 26px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1068,6 +1072,7 @@ textarea {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  padding: 7px 22px;
 }
 
 .packages__container {
@@ -1126,7 +1131,7 @@ textarea {
 }
 
 .package__image_active {
-  height: 100%;
+  height: auto;
 }
 
 .package__image-block {
@@ -1139,13 +1144,22 @@ textarea {
 
 .package__image-block_active {
   width: 50%;
-  height: 100%;
 }
 
 .package__offer {
   position: absolute;
   top: 26px;
   left: 0;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 6px 10px 4px 9px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.package__offer_active {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 9px 22px 9px 12px;
 }
 
 .package__booking-information {
@@ -1162,12 +1176,12 @@ textarea {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 30px 21px 25px 32px;
+  padding: 30px 22px 25px 32px;
 }
 
 .package__booking-information_active {
   width: 50%;
-  padding: 46px 21px 30px 44px;
+  padding: 46px 21px 30px 45px;
 }
 
 .package__hotel-name {
@@ -1177,11 +1191,11 @@ textarea {
   color: #ffffff;
   text-align: left;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 
 .package__hotel-name_active {
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .package__hotel-name-description {
@@ -1190,7 +1204,7 @@ textarea {
   line-height: 160%;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 48px;
 }
 
 .package__hotel-name-description_inactive {
@@ -1204,11 +1218,12 @@ textarea {
   line-height: 15px;
   color: #ffffff;
   text-align: left;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .package__info_active {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
+  margin-left: 3px;
 }
 
 .package__guests {
@@ -1273,6 +1288,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 2px;
 }
 
 .price-block__old-price {
@@ -1282,6 +1298,7 @@ textarea {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
   color: #ffffff;
+  margin-bottom: 4px;
 }
 
 .footer {
@@ -1295,7 +1312,7 @@ textarea {
   -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  grid-gap: 23px;
+  grid-gap: 23px 30px;
 }
 
 .footer__logo {
@@ -1310,7 +1327,7 @@ textarea {
   grid-row: 1 / 3;
   -ms-grid-column-align: start;
       justify-self: start;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .footer__img {
@@ -1346,7 +1363,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .additional-information {
@@ -1379,7 +1396,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .legal-information {
@@ -1410,7 +1427,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .social-network {
@@ -1459,9 +1476,9 @@ textarea {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
+  grid-row: 6 / 7;
   justify-self: start;
 }
 
@@ -1472,7 +1489,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .contact-details__subtitle {
@@ -1481,7 +1498,7 @@ textarea {
   line-height: 160%;
   color: #BDBDBD;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .contact-details__wrapper {
@@ -1559,9 +1576,9 @@ textarea {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / 5;
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
+  grid-row: 6 / 7;
   -ms-grid-column-align: start;
       justify-self: start;
   width: 100%;
@@ -1574,7 +1591,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .message__form {
@@ -1619,7 +1636,7 @@ textarea {
   color: #BDBDBD;
   border: none;
   border-radius: 4px;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
   resize: none;
 }
 
@@ -1683,14 +1700,14 @@ textarea {
 }
 
 .icon_phone {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   fill: #BDBDBD;
 }
 
 .icon_email {
-  width: 16px;
-  height: 13px;
+  width: 20px;
+  height: 14px;
   fill: #BDBDBD;
 }
 
@@ -1698,23 +1715,24 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-grid-row: 8;
+  -ms-grid-row: 10;
   -ms-grid-row-span: 1;
-  grid-row: 8 / 9;
+  grid-row: 10 / 11;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2 / 5;
 }
 
 .footer__links {
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
