@@ -1,8 +1,6 @@
 $(document).ready(function() {
 //Анимация
-<script>
-  AOS.init();
-</script>
+AOS.init();
 
 //Слайдер  
   var hotelSlider = new Swiper('.hotel__swiper-container', {
@@ -98,16 +96,16 @@ $(document).ready(function() {
 //Валидация форм
   $('.phone-number').mask('+7 (999) 999-99-99');
 
-  $('.newsletter__form').validate({
-      messages: {
+  $('.newsletter__form').validate({ 
+    messages: {
         email_subscription: {
           email: "Your email address must be in the format of name@domain.com"
         },
       },
     });
   
-  $('.message__form').validate({
-      rules: {
+  $('.message__form').validate({ 
+    rules: {
         name_message: {
           required: true,
           minlength: 2
@@ -130,8 +128,8 @@ $(document).ready(function() {
     });
 
  
-  $('.modal__form').validate({
-      rules: {
+  $('.modal__form').validate({ 
+    rules: {
         name_booking: {
           required: true,
           minlength: 2
