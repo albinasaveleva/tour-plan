@@ -1,4 +1,10 @@
 $(document).ready(function() {
+//Анимация
+<script>
+  AOS.init();
+</script>
+
+//Слайдер  
   var hotelSlider = new Swiper('.hotel__swiper-container', {
 
     loop: true,
@@ -23,7 +29,7 @@ $(document).ready(function() {
         onlyInViewport: false,
     },
   })
-    
+//Яндекс карта    
   ymaps.ready(init);
   
   function init(){
@@ -47,7 +53,7 @@ $(document).ready(function() {
             iconColor: '#0095b6'
           }));
   }
-  
+//Мобильное меню
   const mobileMenuButton = document.querySelector('.burger-menu');
   const mainPage = document.querySelector('body');
   
@@ -59,7 +65,7 @@ $(document).ready(function() {
     document.querySelector('.form-mobile').classList.toggle('form-mobile_visible');
     mainPage.classList.toggle('body_scrollless');
   })
-
+//Модальное окно
   const modalOpen = $("[data-toggle=modal-open]");
   const modalClose = $("[data-toggle=modal-close]");
   const modal = $('.modal');
@@ -89,7 +95,7 @@ $(document).ready(function() {
       modalDialog.removeClass('modal-dialog_scroll');
     }
   });
-
+//Валидация форм
   $('.phone-number').mask('+7 (999) 999-99-99');
 
   $('.newsletter__form').validate({
