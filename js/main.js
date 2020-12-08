@@ -68,7 +68,6 @@ $(document).ready(function() {
 
   const modalForm = $('');
   const subscriptionForm = $('');
-  const messageForm = $('.message__form');
 
   modalOpen.on('click', function() {
     modal.addClass('modal_visibility');
@@ -106,6 +105,10 @@ $(document).ready(function() {
         name_message: {
           required: true,
           minlength: 2
+        },
+        phone_message: {
+          required: true,
+          minlength: 18
         }
       },
       messages: {
@@ -114,10 +117,12 @@ $(document).ready(function() {
           minlength: "Your name must contain at least 2 characters"
         },
         phone_message: {
-          required: "Please specify your phone number"
+          required: "Please specify your phone number",
+          minlength: "Your phone number must be in the format of +7 (999) 999-99-99"
         },
-      },
+      }
     });
+
  
   $('.modal__form').validate({
       rules: {
@@ -125,6 +130,13 @@ $(document).ready(function() {
           required: true,
           minlength: 2
         },
+        phone_booking: {
+          required: true,
+          minlength: 18
+        },
+        phone_booking: {
+          required: true,
+        }
       },
       messages: {
         name_booking: {
@@ -132,7 +144,8 @@ $(document).ready(function() {
           minlength: "Your name must contain at least 2 characters"
         },
         phone_booking: {
-          required: "Please specify your phone number"
+          required: "Please specify your phone number",
+          minlength: "Your phone number must be in the format of +7 (999) 999-99-99"
         },
         email_booking: {
           required: "We need your email address to contact you",

@@ -795,6 +795,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 350px;
 }
 
 .newsletter__input {
@@ -804,6 +805,8 @@ textarea {
   line-height: 18px;
   color: #BDBDBD;
   padding: 18px 75px 18px 33px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .newsletter__button {
@@ -813,6 +816,8 @@ textarea {
   line-height: 15px;
   color: #ffffff;
   padding: 20px 18px;
+  border-radius: 0 6px 6px 0;
+  overflow: hidden;
 }
 
 .review__container {
@@ -2468,6 +2473,9 @@ textarea {
   }
   .map-wrapper {
     height: 170px;
+  }
+  .newsletter__input-group {
+    max-width: 280px;
   }
   .newsletter__input {
     max-width: 280px;

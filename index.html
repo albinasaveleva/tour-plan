@@ -751,7 +751,7 @@
                         <input type="text" name="name_message" placeholder="Your Full Name*" class="message__input" required minlength="2">
                     </div>
                     <div class="message__input-group">
-                        <input type="tel" name="phone_message" placeholder="Phone Number*" class="message__input phone-number" required>
+                        <input type="tel" name="phone_message" placeholder="Phone Number*" class="message__input phone-number" required minlength="18">
                     </div>
                 </div>
                 <textarea name="message_message" rows="6" placeholder="Message" class="message__textarea"></textarea>
@@ -782,7 +782,7 @@
                 <form action="send.php" method="POST" class="modal__form">
                     <div class="modal__inputs">
                         <input type="text" name="name_booking" placeholder="Your Full Name*" class="modal__input" required minlength="2">
-                        <input type="tel" name="phone_booking" placeholder="Phone Number*" class="modal__input phone-number" required>
+                        <input type="tel" name="phone_booking" placeholder="Phone Number*" class="modal__input phone-number" required minlength="18">
                         <input type="email" name="email_booking" placeholder="Email*" class="modal__input" required>
                     </div>
                     <textarea name="message_booking" placeholder="Message" class="modal__textarea"></textarea>
@@ -791,8 +791,7 @@
                         <span class="modal__text">* Required Fields</span>
                     </div>
                 </form>
-    </div>
-    
+        </div>
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
