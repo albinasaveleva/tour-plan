@@ -250,7 +250,7 @@ textarea {
   position: relative;
   border-radius: 6px;
   overflow: hidden;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 }
 
 .form-mobile__input {
@@ -284,6 +284,7 @@ textarea {
   width: 16px;
   height: 11px;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .burger-menu__line {
@@ -579,7 +580,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .price-block {
@@ -621,6 +622,7 @@ textarea {
   line-height: 16px;
   color: #ffffff;
   text-align: right;
+  margin-top: 5px;
 }
 
 .booking__guests {
@@ -1396,7 +1398,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .legal-information {
@@ -1427,7 +1429,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .social-network {
@@ -1936,8 +1938,12 @@ textarea {
   .navbar-top {
     padding: 30px 0;
   }
-  .navbar__search {
+  .navbar__form {
     margin-left: auto;
+    margin-right: 55px;
+  }
+  .navbar__input {
+    width: 340px;
   }
   .navbar__menu {
     width: 96%;
@@ -1950,7 +1956,10 @@ textarea {
     width: 340px;
   }
   .navbar-bottom {
-    padding: 22px 0;
+    padding: 23px 0;
+  }
+  .ratting {
+    padding: 8px 7px;
   }
   .navbar__link {
     font-size: 12px;
@@ -1972,6 +1981,12 @@ textarea {
   .map-wrapper {
     width: 48.5%;
   }
+  .newsletter__container {
+    padding: 30px 0;
+  }
+  .review__container {
+    padding-top: 40px;
+  }
   .review__title {
     font-size: 30px;
     line-height: 38px;
@@ -1990,10 +2005,10 @@ textarea {
     display: none;
   }
   .review__swiper-button-prev {
-    left: 0;
+    left: 11px;
   }
   .review__swiper-button-next {
-    right: 0;
+    right: -11px;
   }
   .activities__container {
     padding-bottom: 70px;
@@ -2026,13 +2041,13 @@ textarea {
     -ms-grid-columns: (minmax(min-content, 1fr))[4];
         grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
         grid-template-columns: repeat(4, minmax(min-content, 1fr));
-    row-gap: 30px;
+    row-gap: 18px;
     -webkit-column-gap: 18px;
             column-gap: 18px;
     padding: 73px 0 33px;
   }
   .footer__img {
-    max-width: 104px;
+    max-width: 96px;
     max-height: 120px;
   }
   .footer__logo {
@@ -2043,6 +2058,7 @@ textarea {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     margin-top: 0;
+    margin-bottom: 10px;
   }
   .social-network {
     -ms-grid-column: 2;
@@ -2054,8 +2070,6 @@ textarea {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
   .categories {
     -ms-grid-column: 1;
@@ -2064,6 +2078,7 @@ textarea {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
+    margin-bottom: 20px;
   }
   .additional-information {
     -ms-grid-column: 2;
@@ -2072,13 +2087,11 @@ textarea {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
   .legal-information {
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-    grid-column: 4 / 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3 / 5;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
@@ -2098,18 +2111,20 @@ textarea {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
-    -ms-grid-row: 7;
+    -ms-grid-row: 8;
     -ms-grid-row-span: 1;
-    grid-row: 7 / 8;
+    grid-row: 8 / 9;
     max-width: 540px;
+    padding-top: 7px;
+    margin-bottom: 20px;
   }
   .footer-bottom {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1 / 5;
-    -ms-grid-row: 9;
+    -ms-grid-row: 10;
     -ms-grid-row-span: 1;
-    grid-row: 9 / 10;
+    grid-row: 10 / 11;
   }
   .footer__links {
     -webkit-transform: translateX(0);
@@ -2120,6 +2135,9 @@ textarea {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 530px;
+  }
+  .navbar-top {
+    padding: 23px 0 28px;
   }
   .hotel-name-block__wrapper_success {
     padding-top: 100px;
@@ -2147,12 +2165,15 @@ textarea {
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar-bottom {
+    padding: 0;
+  }
   .navbar-bottom_hidden {
     display: none;
   }
   .navbar-bottom_mobile {
     position: fixed;
-    top: 78px;
+    top: 70px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2178,10 +2199,11 @@ textarea {
     display: flex;
   }
   .breadcrumb {
-    padding-top: 78px;
+    padding-top: 70px;
   }
   .hotel-name-block {
     padding-top: 5px;
+    padding-bottom: 19px;
   }
   .hotel-name-block__wrapper {
     -webkit-box-flex: 1;
@@ -2200,7 +2222,7 @@ textarea {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
-    margin-bottom: 14px;
+    margin-bottom: 11px;
   }
   .stars {
     -webkit-box-ordinal-group: 1;
@@ -2209,6 +2231,7 @@ textarea {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     margin-left: auto;
+    margin-right: 15px;
     margin-bottom: 14px;
   }
   .hotel__swiper-container {
@@ -2223,6 +2246,7 @@ textarea {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+    padding: 27px 21px 27px 24px;
   }
   .map-wrapper {
     width: 100%;
@@ -2236,6 +2260,13 @@ textarea {
   }
   .newsletter__title {
     margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newsletter__subtitle {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 5px;
   }
   .review__container {
     padding-bottom: 50px;
@@ -2246,15 +2277,15 @@ textarea {
     margin-bottom: 42px;
   }
   .review__swiper-button {
-    top: 45px;
+    top: 50px;
   }
   .review__swiper-button-prev {
     left: 50%;
-    margin-left: -105px;
+    margin-left: -97px;
   }
   .review__swiper-button-next {
     right: 50%;
-    margin-right: -105px;
+    margin-right: -114px;
   }
   .review__text {
     padding: 0 31px;
@@ -2296,9 +2327,12 @@ textarea {
     -ms-grid-row: span 2;
         grid-row-start: span 2;
   }
+  .package__image_active {
+    height: 100%;
+  }
   .package__image-block_active {
     width: 100%;
-    height: 530px;
+    height: 250px;
   }
   .package__booking-information_active {
     width: 100%;
@@ -2311,6 +2345,9 @@ textarea {
     grid-gap: 30px;
     padding: 69px 0 21px;
   }
+  .footer__logo {
+    margin-bottom: 9px;
+  }
   .footer__img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -2318,6 +2355,10 @@ textarea {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
+  }
+  .message {
+    padding-top: 0;
+    margin-bottom: 0;
   }
   .message__input-group {
     margin-bottom: 15px;
@@ -2344,9 +2385,10 @@ textarea {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    -ms-grid-row: 3;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 3 / 4;
+    grid-row: 5 / 6;
+    margin-bottom: 7px;
   }
   .additional-information {
     -ms-grid-column: 1;
@@ -2362,9 +2404,9 @@ textarea {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    -ms-grid-row: 5;
+    -ms-grid-row: 3;
     -ms-grid-row-span: 1;
-    grid-row: 5 / 6;
+    grid-row: 3 / 4;
     -ms-grid-column-align: start;
         justify-self: start;
   }
@@ -2402,6 +2444,12 @@ textarea {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .message__textarea {
+    margin-bottom: 10px;
+  }
+  .message__title {
+    margin-bottom: 15px;
+  }
   .footer-bottom {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -2415,10 +2463,9 @@ textarea {
   }
   .footer__links {
     margin-bottom: 10px;
-  }
-  .footer__links {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    padding-top: 0;
   }
 }
 
@@ -2497,6 +2544,7 @@ textarea {
   }
   .newsletter__input {
     max-width: 280px;
+    padding-left: 20px;
   }
   .review__card {
     max-width: 280px;

@@ -81,11 +81,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if ($name_message != "") {
-    header('Location: thankyou_message.html');  
-} else if ($name_booking != "") {
-    header('Location: thankyou_booking.html');  
-} else {
-    header('Location: thankyou_subscription.html');
-}
+    header('Location: thankyou.html');  
 ?>

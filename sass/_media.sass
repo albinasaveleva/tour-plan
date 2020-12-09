@@ -21,8 +21,12 @@
         max-width: 700px
     .navbar-top
         padding: 30px 0
-    .navbar__search
-        margin-left: auto
+    .navbar
+        &__form
+            margin-left: auto
+            margin-right: 55px
+        &__input
+            width: 340px
     .navbar__menu
         width: 96%
         margin: 0 auto
@@ -31,7 +35,9 @@
     .search__input
         width: 340px
     .navbar-bottom
-        padding: 22px 0
+        padding: 23px 0
+    .ratting
+        padding: 8px 7px
     .navbar__link
         font-size: 12px
         line-height: 15px
@@ -47,7 +53,11 @@
         margin-bottom: 0
     .map-wrapper
         width: 48.5%
+    .newsletter__container
+        padding: 30px 0
     .review
+        &__container
+            padding-top: 40px
         &__title
             font-size: 30px
             line-height: 38px
@@ -61,9 +71,9 @@
             &::after
                 display: none
         &__swiper-button-prev
-            left: 0
+            left: 11px
         &__swiper-button-next
-            right: 0
+            right: -11px
     .activities__container
         padding-bottom: 70px
     .activity
@@ -86,30 +96,30 @@
     .footer
         &__container
             grid-template-columns: repeat(4, minmax(min-content, 1fr))
-            row-gap: 30px
+            row-gap: 18px
             column-gap: 18px
             padding: 73px 0 33px
         &__img
-            max-width: 104px
+            max-width: 96px
             max-height: 120px
         &__logo
             grid-column: 1 / 2
             grid-row: 1 / 2
             margin-top: 0
+            margin-bottom: 10px
     .social-network
         grid-column: 2 / 4
         grid-row: 1 / 2
         align-self: center
-        justify-self: center
     .categories
         grid-column: 1 / 2
         grid-row: 3 / 4
+        margin-bottom: 20px
     .additional-information
         grid-column: 2 / 4
         grid-row: 3 / 4
-        justify-self: center
     .legal-information
-        grid-column: 4 / 5
+        grid-column: 3 / 5
         grid-row: 3 / 4
         justify-self: end
     .contact-details
@@ -118,17 +128,21 @@
         padding-top: 0
     .message
         grid-column: 1 / 5
-        grid-row: 7 / 8
+        grid-row: 8 / 9
         max-width: 540px
+        padding-top: 7px
+        margin-bottom: 20px
     .footer
         &-bottom
             grid-column: 1 / 5
-            grid-row: 9 / 10
+            grid-row: 10 / 11
         &__links
             transform: translateX(0)     
 @media screen and ( max-width: 767px )
     .container
         max-width: 530px
+    .navbar-top
+        padding: 23px 0 28px
     .hotel-name-block__wrapper_success
         padding-top: 100px
     .navbar
@@ -150,11 +164,12 @@
     .form-mobile
         display: flex
     .navbar-bottom
+        padding: 0
         &_hidden
             display: none
         &_mobile
             position: fixed
-            top: 78px
+            top: 70px
             left: 0
             right: 0
             bottom: 0
@@ -170,9 +185,10 @@
     .burger-menu
         display: flex
     .breadcrumb
-        padding-top: 78px
+        padding-top: 70px
     .hotel-name-block
         padding-top: 5px
+        padding-bottom: 19px
         &__wrapper
             flex-grow: 1
         &__hotel-name
@@ -182,11 +198,12 @@
         display: none
     .offer
         order: -1
-        margin-bottom: 14px
+        margin-bottom: 11px
     .stars
         order: 0
         flex-basis: auto
         margin-left: auto
+        margin-right: 15px
         margin-bottom: 14px
     .hotel__swiper-container
         width: 530px
@@ -198,6 +215,7 @@
         width: 100%
         margin-right: 0
         margin-bottom: 20px
+        padding: 27px 21px 27px 24px
     .map-wrapper
         width: 100%
     .newsletter
@@ -207,6 +225,12 @@
             padding: 76px 0 83px
         &__title
             margin-bottom: 37px
+            font-size: 30px
+            line-height: 38px
+        &__subtitle
+            font-size: 20px
+            line-height: 25px 
+            margin-bottom: 5px 
     .review
         &__container
             padding-bottom: 50px
@@ -217,13 +241,13 @@
             line-height: 23px
             margin-bottom: 42px
         &__swiper-button
-            top: 45px
+            top: 50px
         &__swiper-button-prev
             left: 50%
-            margin-left: -105px
+            margin-left: -97px
         &__swiper-button-next
             right: 50%
-            margin-right: -105px
+            margin-right: -114px
         &__text
             padding: 0 31px
     .activities
@@ -252,10 +276,12 @@
             grid-column-start: span 1
             grid-row-start: span 2
         &__image
+            &_active
+                height: 100%
             &-block
                 &_active
                     width: 100%
-                    height: 530px
+                    height: 250px
         &__booking-information
             &_active
                 width: 100% 
@@ -265,10 +291,14 @@
             grid-template-columns: repeat(1, minmax(min-content, 1fr))
             grid-gap: 30px
             padding: 69px 0 21px
+        &__logo
+            margin-bottom: 9px
         &__img
             grid-column: 1 / 2
             grid-row: 1 / 2
     .message
+        padding-top: 0
+        margin-bottom: 0
         &__input-group
             margin-bottom: 15px
         &__inputs
@@ -282,14 +312,15 @@
             flex-basis: 100%
     .categories
         grid-column: 1 / 2
-        grid-row: 3 / 4
+        grid-row: 5 / 6
+        margin-bottom: 7px
     .additional-information
         grid-column: 1 / 2
         grid-row: 4 / 5
         justify-self: start
     .legal-information
         grid-column: 1 / 2
-        grid-row: 5 / 6
+        grid-row: 3 / 4
         justify-self: start
     .contact-details
         grid-column: 1 / 2
@@ -307,6 +338,10 @@
             text-align: left
             margin-bottom: 15px
             flex-basis: 100%
+        &__textarea
+            margin-bottom: 10px
+        &__title
+            margin-bottom: 15px
     .footer
         &-bottom
             grid-column: 1 / 2
@@ -314,8 +349,8 @@
             justify-content: flex-start
         &__links
             margin-bottom: 10px
-        &__links
-            flex-basis: 100%       
+            flex-basis: 100%  
+            padding-top: 0     
 @media screen and ( max-width: 567px )
     .container
         max-width: 440px
@@ -370,6 +405,7 @@
             max-width: 280px
         &__input
             max-width: 280px
+            padding-left: 20px
     .review
         &__card
             max-width: 280px
