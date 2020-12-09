@@ -51,6 +51,7 @@ AOS.init();
             iconColor: '#0095b6'
           }));
   }
+
 //Мобильное меню
   const mobileMenuButton = document.querySelector('.burger-menu');
   const mainPage = document.querySelector('body');
@@ -95,8 +96,6 @@ AOS.init();
   });
 //Валидация форм
   $('.phone-number').mask('+7 (999) 999-99-99');
-
-
 
   $('.newsletter__form').validate({ 
     messages: {

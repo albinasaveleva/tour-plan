@@ -187,7 +187,8 @@
                     <a class="button booking__button" data-toggle="modal-open">View Other Options</a>
                 </div>
                 <div class="map-wrapper">
-                    <div class="map" id="map" style="max-width: 530px; height: 213px"></div>
+                    <div class="map" id="map" style="max-width: 530px; height: 213px">
+                    </div>
                 </div>
             </div>
         </div>
@@ -510,7 +511,7 @@
         </div>
     </div>
 </div>
-<div class="newsletter" data-parallax="scroll" data-image-src="assets/img/newsletter-bg.jfif">
+<div class="newsletter" data-parallax="scroll" data-image-src="assets/img/newsletter-bg.jpg">
     <div class="container newsletter__container">
         <h2 class="newsletter__title">
             <span class="newsletter__subtitle">subscribe to our</span>
@@ -559,7 +560,7 @@
                 <div class="swiper-slide review__swiper-slide">
                     <div class="review__card">
                         <div class="profile">
-                            <img src="assets/img/reviewer-avatar-2.jfif" class="profile__avatar" alt="avatar">
+                            <img src="assets/img/reviewer-avatar-2.jpg" class="profile__avatar" alt="avatar">
                             <h3 class="profile__name">Margo Brown</h3>
                             <span class="profile__date">Stayed 18 Nov, 2019</span>
                             <div class="profile__ratting">
@@ -580,7 +581,7 @@
                 <div class="swiper-slide review__swiper-slide">
                     <div class="review__card">
                         <div class="profile">
-                            <img src="assets/img/reviewer-avatar-3.jfif" class="profile__avatar" alt="avatar">
+                            <img src="assets/img/reviewer-avatar-3.jpg" class="profile__avatar" alt="avatar">
                             <h3 class="profile__name">Bill Johnson</h3>
                             <span class="profile__date">Stayed 18 Nov, 2019</span>
                             <div class="profile__ratting">
@@ -749,7 +750,7 @@
             <form action="send.php" method="POST" class="message__form">
                 <div class="message__inputs">
                     <div class="message__input-group">
-                        <input type="text" name="name_message full-name" placeholder="Your Full Name*" class="message__input" required minlength="2">
+                        <input type="text" onkeyup="this.value = this.value.replace(/[0-9]/,'');" name="name_message full-name" placeholder="Your Full Name*" class="message__input" required minlength="2">
                     </div>
                     <div class="message__input-group">
                         <input type="tel" name="phone_message" placeholder="Phone Number*" class="message__input phone-number" required minlength="18">
@@ -782,7 +783,7 @@
             <h3 class="modal__title">Booking</h3>
                 <form action="send.php" method="POST" class="modal__form">
                     <div class="modal__inputs">
-                        <input type="text" name="name_booking full-name" placeholder="Your Full Name*" class="modal__input" required minlength="2">
+                        <input type="text" onkeyup="this.value = this.value.replace(/[0-9]/,'');" name="name_booking full-name" placeholder="Your Full Name*" class="modal__input" required minlength="2">
                         <input type="tel" name="phone_booking" placeholder="Phone Number*" class="modal__input phone-number" required minlength="18">
                         <input type="email" name="email_booking" placeholder="Email*" class="modal__input" required>
                     </div>
@@ -800,7 +801,7 @@
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>
