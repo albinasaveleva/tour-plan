@@ -20,8 +20,7 @@
     overflow: hidden
     max-width: 350px
     width: 100%
-    min-height: 500px
-    height: 100%
+    height: 500px
     &_active
         flex-direction: row
         max-width: 730px
@@ -31,7 +30,7 @@
         height: 100%
         object-fit: cover
         &_active
-            height: auto
+            height: 100%
         &-block
             width: 100%
             height: 250px
@@ -39,6 +38,7 @@
             object-fit: cover
             &_active
                 width: 50%
+                height: 100%
     &__offer
         position: absolute
         top: 26px
@@ -59,9 +59,10 @@
         flex-direction: column
         justify-content: flex-start
         padding: 30px 22px 25px 32px
+        overflow: auto
         &_active
             width: 50%
-            padding: 46px 21px 30px 45px
+            padding: 44px 21px 30px 45px
     &__hotel-name
         font-weight: 700
         font-size: 18px
