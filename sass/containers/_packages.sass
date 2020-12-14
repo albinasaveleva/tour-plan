@@ -20,7 +20,6 @@
     overflow: hidden
     max-width: 350px
     width: 100%
-    height: 500px
     &_active
         flex-direction: row
         max-width: 730px
@@ -56,13 +55,13 @@
         width: 100%
         min-height: 250px
         flex-grow: 1
+        display: flex
         flex-direction: column
-        justify-content: flex-start
+        justify-content: space-between
         padding: 30px 22px 25px 32px
-        overflow: auto
         &_active
             width: 50%
-            padding: 44px 21px 30px 45px
+            padding: 44px 21px 25px 45px
     &__hotel-name
         font-weight: 700
         font-size: 18px
@@ -72,14 +71,14 @@
         margin: 0
         margin-bottom: 26px
         &_active
-            margin-bottom: 28px
+            margin-bottom: 27px
         &-description
             font-weight: 400
             font-size: 14px
             line-height: 160%
             color: $main-light
             margin: 0
-            margin-bottom: 48px
+            margin-bottom: 52px
             &_inactive
                 display: none
     &__info
@@ -91,7 +90,7 @@
         text-align: left
         margin-bottom: 22px
         &_active
-            margin-bottom: 35px
+            margin-bottom: 36px
             margin-left: 3px
     &__guests
         display: flex
@@ -123,6 +122,7 @@
         display: flex
         align-items: flex-end
         justify-content: space-between 
+        flex-wrap: wrap
         margin-left: 2px
     &__old-price
         font-weight: 400

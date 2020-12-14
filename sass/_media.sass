@@ -17,17 +17,70 @@
         &_active
             max-width: 630px     
 @media screen and ( max-width:  991px)
-    .button:hover
+    .button
         cursor: default
-    a:hover 
+        opacity: 1
+        &:hover
+            cursor: default
+            opacity: 1
+        &:active
+            cursor: default
+            opacity: 1
+        &:focus
+            cursor: default
+            opacity: 1
+    a
         cursor: default
-    .review__swiper-button
-        cursor: default
+        fill-opacity: 1
+        &:hover
+            cursor: default
+            opacity: 1
+        &:active
+            cursor: default
+            opacity: 1
+        &:focus
+            cursor: default
+            opacity: 1
     .hotel__swiper-button
         cursor: default
+        fill-opacity: 0.8
+        &:hover
+            cursor: default
+            fill-opacity: 0.8
+        &:hover
+            cursor: default
+            fill-opacity: 0.8
+        &:hover
+            cursor: default
+            fill-opacity: 0.8
+    .review__swiper-button
+        cursor: default
+        fill-opacity: 1
+        &:hover
+            cursor: default
+            fill-opacity: 1
+        &:hover
+            cursor: default
+            fill-opacity: 1
+        &:hover
+            cursor: default
+            fill-opacity: 1
+    .review__text
+        height: 135px
     .close:hover
         cursor: default
-
+        fill-opacity: 1
+        &:hover
+            cursor: default
+            fill-opacity: 1
+        &:hover
+            cursor: default
+            fill-opacity: 1
+        &:hover
+            cursor: default
+            fill-opacity: 1
+    .navbar__after
+        display: none
     .container
         max-width: 700px
     .navbar-top
@@ -62,10 +115,10 @@
         width: 48.5%
         margin-right: 20px
         margin-bottom: 0
-    .map-wrapper
+    .map
         width: 48.5%
     .newsletter__container
-        padding: 94px 0 91px
+        padding: 90px 0 87px
     .review
         &__container
             padding-top: 40px
@@ -81,12 +134,14 @@
                 display: none
             &::after
                 display: none
+        &__swiper-button
+            transform: translate(-50%, -50%)
         &__swiper-button-prev
             left: 11px
         &__swiper-button-next
             right: -11px
     .activities__container
-        padding-bottom: 70px
+        padding: 50px 0 70px
     .activity
         max-width: 340px
         width: 100%
@@ -227,15 +282,15 @@
         margin-right: 0
         margin-bottom: 20px
         padding: 27px 21px 27px 24px
-    .map-wrapper
+    .map
         width: 100%
     .newsletter
         &__container
             max-width: 530px
             justify-content: flex-start
-            padding: 76px 0 83px
+            padding: 76px 0 61px
         &__title
-            margin-bottom: 37px
+            margin-bottom: 30px
             font-size: 30px
             line-height: 38px
         &__subtitle
@@ -252,7 +307,8 @@
             line-height: 23px
             margin-bottom: 42px
         &__swiper-button
-            top: 50px
+            top: 60px
+            transform: translate(-50%, -100%)
         &__swiper-button-prev
             left: 50%
             margin-left: -97px
@@ -261,9 +317,10 @@
             margin-right: -114px
         &__text
             padding: 0 31px
+            height: 135px
     .activities
         &__container
-            padding: 40px 0 60px
+            padding: 35px 0 60px
         &__title
             margin-bottom: 36px 
             font-size: 18px 
@@ -376,6 +433,8 @@
     .review
         &__card
             max-width: 440px
+        &__text
+            height: 153px
     .activity
         max-width: 440px
     .package
@@ -410,14 +469,15 @@
             max-width: 110px
     .hotel-information
         width: 280px
-    .map-wrapper    
+    .map  
         height: 170px
     .newsletter
+        &__form
+            width: 280px
         &__input-group
-            max-width: 280px
+            width: 280px
         &__input
             max-width: 280px
-            padding-left: 20px
     .review
         &__card
             max-width: 280px
@@ -427,11 +487,14 @@
         max-width: 280px
         &_active
             max-width: 280px
+    .review__text
+        height: 270px
     .modal-dialog
         max-width: 280px
         padding: 33px
     .modal__button
         margin-bottom: 15px
+
     .close
         margin-right: -15px
 @media (max-height: 550px)

@@ -50,7 +50,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'test.mail.saveleva.albina@gmail.com'; // Логин на почте
-    $mail->Password   = 'test_mail_ololo'; // Пароль на почте
+    $mail->Password   = 'test_mail_ololo_cfdtkmtdf'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('test.mail.saveleva.albina@gmail.com', 'Альбина Савельева'); // Адрес самой почты и имя отправителя
@@ -66,7 +66,7 @@ try {
     } else if ($name_booking != "") {
         $mail->Subject = $title_booking;
         $mail->Body = $body_booking;  
-    } else {
+    } else  if (!empty($email_subscription)){
         $mail->Subject = $title_subscription;
         $mail->Body = $body_subscription;
     }  

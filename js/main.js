@@ -2,9 +2,25 @@ $(document).ready(function() {
 //Анимация
 AOS.init();
 
+const navbarInput = document.querySelector('.navbar__input');
+const navbarFormAfter = document.querySelector('.navbar__after');
+
+
+
+
+navbarInput.addEventListener("blur", function() {
+  if (navbarInput.value.trim() == "") {
+    navbarFormAfter.classList.remove("navbar__after_none");
+  } else {
+    navbarFormAfter.classList.add("navbar__after_none");
+  }
+
+}) 
+navbarInput.addEventListener("focus", function() {
+  navbarFormAfter.classList.add("navbar__after_none");
+}) 
 //Слайдер  
   var hotelSlider = new Swiper('.hotel__swiper-container', {
-
     loop: true,
         navigation: {
         nextEl: '.hotel__swiper-button-next',
@@ -16,7 +32,6 @@ AOS.init();
       },
     })
   var reviewSlider = new Swiper('.review__swiper-container', {
-  
     loop: true,
       navigation: {
       nextEl: '.review__swiper-button-next',
@@ -27,30 +42,6 @@ AOS.init();
         onlyInViewport: false,
     },
   })
-//Яндекс карта    
-  ymaps.ready(init);
-  
-  function init(){
-        var myMap = new ymaps.Map("map", {
-            center: [41.01003, 28.97968],
-            zoom: 7
-        },
-        {
-          autoFitToViewport: 'always',
-          searchControlProvider: 'yandex#search'
-      });
-        myGeoObject = new ymaps.GeoObject({
-          geometry: {
-              type: "Point",
-              coordinates: [41.01003, 28.97968]
-          }    
-        });
-        myMap.geoObjects
-          .add(myGeoObject)
-          .add(new ymaps.Placemark([41.01003, 28.97968], {
-            iconColor: '#0095b6'
-          }));
-  }
 
 //Мобильное меню
   const mobileMenuButton = document.querySelector('.burger-menu');
@@ -70,9 +61,7 @@ AOS.init();
   const modal = $('.modal');
   const modalDialog = $('.modal-dialog');
   const body = $('body');
-
-  const modalForm = $('');
-  const subscriptionForm = $('');
+  const bookNowBtn = $('.button__book-now')
 
   modalOpen.on('click', function() {
     modal.addClass('modal_visibility');
@@ -94,15 +83,28 @@ AOS.init();
       modalDialog.removeClass('modal-dialog_scroll');
     }
   });
+  bookNowBtn.on('click', function() {
+    modal.addClass('modal_visibility');
+    modalDialog.addClass('modal-dialog_visibility');
+    body.addClass('body_scrollless');
+    modalDialog.addClass('modal-dialog_scroll');
+  });
 //Валидация форм
   $('.phone-number').mask('+7 (999) 999-99-99');
 
+
+
   $('.newsletter__form').validate({ 
+    rules: {
+      email_subscription: {
+        email: true
+      }
+    },
     messages: {
-        email_subscription: {
+      email_subscription: {
           email: "Your email address must be in the format of name@domain.com"
-        },
-      },
+        }
+      }
     });
   
   $('.message__form').validate({ 
@@ -139,8 +141,9 @@ AOS.init();
           required: true,
           minlength: 18
         },
-        phone_booking: {
+        email_booking: {
           required: true,
+          email: true
         }
       },
       messages: {
@@ -154,9 +157,39 @@ AOS.init();
         },
         email_booking: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Your email address must be in the format of name@domain.com",
         }
       },
     });
+    const newsletterBtn = document.querySelector('.newsletter__button');
+    const newsletterInput = document.querySelector('.newsletter__input');
+    const newsletterForm = document.querySelector('.newsletter__form');
+    const emptyInput = document.querySelector('.empty-input');
+    
+
+   if (newsletterInput.value.trim() == "") {
+        newsletterBtn.classList.add('button_disable');
+        newsletterBtn.disabled=true;
+    }
+    newsletterInput.addEventListener('input', function() {
+      if (newsletterInput.value.trim() != "") {
+        newsletterBtn.classList.remove('button_disable');
+        newsletterBtn.disabled=false;
+    } else {
+      newsletterBtn.classList.add('button_disable');
+      newsletterBtn.disabled=true;
+    }
+    })
+    newsletterBtn.addEventListener("mouseover", function() {
+      if (newsletterBtn.classList.contains("button_disable")) {
+      emptyInput.classList.remove('empty-input_none');
+      }
+    })
+    newsletterBtn.addEventListener("mouseout", function() {
+      if (newsletterBtn.classList.contains("button_disable")) {
+      emptyInput.classList.add('empty-input_none');
+      }
+    })
+    
 
 });
